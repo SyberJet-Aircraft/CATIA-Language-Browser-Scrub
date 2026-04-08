@@ -1,0 +1,9 @@
+from pywinauto import Desktop
+
+wins = Desktop(backend="uia").windows(title_re=r".*CATIA.*")
+
+for i, w in enumerate(wins):
+    try:
+        print(f"[{i}] {w.window_text()!r}  handle={w.handle}")
+    except Exception as e:
+        print(f"[{i}] error: {e}")

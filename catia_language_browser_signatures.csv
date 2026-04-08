@@ -1,0 +1,29 @@
+﻿object_type,function_name,signature
+2DArc,AbsoluteId,Feature->AbsoluteId (): String
+2DArc,Access,"Feature->Access (Path: String, Type: String): UndefinedType"
+2DArc,ActivateInactivateFeature,Feature->ActivateInactivateFeature (activate: Boolean): VoidType
+2DArc,AddExtension,Feature->AddExtension (type: String): UndefinedType
+2DArc,AttributeType,Feature->AttributeType (AttributeName: String): String
+2DArc,EndModifyTemplate,EndModifyTemplate (template: Feature): VoidType
+2DArc,Find,"Feature->Find (Type: String, Condition: String, Down: Boolean): UndefinedType"
+2DArc,GetAttributeBoolean,Feature->GetAttributeBoolean (String): Boolean
+2DArc,GetAttributeInteger,Feature->GetAttributeInteger (String): Integer
+2DArc,GetAttributeObject,Feature->GetAttributeObject (String): UndefinedType
+2DArc,GetAttributeReal,Feature->GetAttributeReal (String): Real
+2DArc,GetAttributeString,Feature->GetAttributeString (String): String
+2DArc,GetPartFeature,GetPartFeature (iFeature: Feature): Part
+2DArc,HasAttribute,Feature->HasAttribute (String): Boolean
+2DArc,IsOwnedBy,Feature->IsOwnedBy (owner: Feature): Boolean
+2DArc,IsPatternInstanceLocked,IsPatternInstanceLocked (patternInstance: Feature): Boolean
+2DArc,IsSupporting,Feature->IsSupporting (typeName: String): Boolean
+2DArc,ListAttributeNames,"Feature->ListAttributeNames (TypeFilter: String, DynamicOnly: Boolean): List"
+2DArc,LockPatternInstance,"LockPatternInstance (patternInstance: Feature, doLock: Boolean): VoidType"
+2DArc,Query,"Query (Type: String, Condition: String): List"
+2DArc,SetAttributeBoolean,"Feature->SetAttributeBoolean (String, Boolean): VoidType"
+2DArc,SetAttributeDimension,"Feature->SetAttributeDimension (String, Real, String): VoidType"
+2DArc,SetAttributeInteger,"Feature->SetAttributeInteger (String, Integer): VoidType"
+2DArc,SetAttributeObject,"Feature->SetAttributeObject (String, Feature): VoidType"
+2DArc,SetAttributeReal,"Feature->SetAttributeReal (String, Real): VoidType"
+2DArc,SetAttributeString,"Feature->SetAttributeString (String, String): VoidType"
+2DArc,Update,Feature->Update(): VoidType
+2DArc,List,"List (Next: ObjectType, ...): List"

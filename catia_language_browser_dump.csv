@@ -1,0 +1,148 @@
+﻿object_type,function_name,signature_text
+Wire,-------- Wire --------,Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+Wire,ComputedMinAngle,Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+Wire,ComputedMinBendRadius,Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+Wire,FromTo,Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+Wire,-------- Product --------,Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+Wire,CreateConstraint,"Product-»CreateConstraint (name: String, type: String, element: ObjectType, ..): UndefinedType Package: CATPackageGenerativeKnowledge = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Wire,CreatePathString,"7 Product->CreatePathString {instance: Feature, element: ObjectType): String Package: CATPackageGenerativeKnowledge | | — oe Al >'@O Leh 7 aS RD 8 leases com @ & &] fey 074 RS [OO (< ofa 4 7 ee a 3S S| Geometrical Set.1 O Define In Were Cbiect [OO"
+Wire,CreatePublication,"Product-»CreatePublication (instance: Product, published element: Objectlype, name: String): String Package: CATPackageGenerativeKnowledge = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Wire,DefineInterferenceComputation,"DefineinterferenceComputation (p1: Product, p2: Product, TypCakc: String, ClearVal: Length, NameShape!: String, NameShape2: String, totoRule: Expert Rule): Boolean Package: SpalTFCheckMethod = ] \ ] SiN 2 . > - a | &] fey 074 RS [OO aH ofa m3 ia | 7 a Ge ee = rim) S| Geometrical Set.1 | O Define In werk Coiect [OO"
+Wire,DistanceMin,"7 DistanceMin (p1: Product, p2: Product, ...): Length Package: SpaFunctionsPackage = ] y s . Pe m2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Wire,GetLocation,"7 Product-»GetLocation (out Real, out Real, out Real): Boolean Package: ProductFunctionsPackage = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Wire,HasARepresentation,7 Product->HasARepresentation (String): Boolean Package: ProductFunctionsPackage = ] y o . a om a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Wire,IsIncludedIn,"7 IsIncludedin (p1: Product, p2: Product): Boolean Package: SpaFunctionsPackage = ] ] s . Pe m2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Wire,ManageInstance,"Product-»Managelnstance (catalogid (ARM): String, chapterName: String, queryExpression: String, instanceName: String): Product Package: CATPackageGenerativeKnowledge = ] \ ] SiN 2 . > - a | &] fey 074 RS [OO aH ofa m3 ia | 7 a Ge ee = rim) S| Geometrical Set.1 | O Define In werk Coiect [OO"
+Wire,PenetrationMax,"7 PenetrationMax (p1: Product, p2: Product, ...): Length Package: SpaFunctionsPackage = ] y s . Pe m2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Wire,RemoveInstance,7 Product-»Removelnstance (instanceName: String): Product Package: CATPackageGenerativeKnowledge = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y
+Wire,-------- Feature --------,7 Product-»Removelnstance (instanceName: String): Product Package: CATPackageGenerativeKnowledge = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y
+Wire,AbsoluteId,7 Feature->Absoluteld 0: String Package: CATPackageMethodObject = J y GIN o “7 - > 2 Sl BS @@ Lette 7 eS RD S cama PO renmercor @
+Wire,Access,"7 Feature->Access (Path: String, Type: String}: UndefinedType Package: CATPackageMethodFind 5 ! x. |! 2 . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Wire,ActivateInactivateFeature,7 Feature->ActivatelnactivateFeature (activate: Boolean): VoidType Package: CATPackageMethodMeasures = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y
+Wire,AddExtension,7 Feature->AddExtension (type: String): UndefinedType Package: CATPackageMethodObject 5 ! x. |! 2 . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Wire,AttributeType,7 Feature->Attributelype (AttributeName: String): String Package: CATPackageMethodObject 5 ! ~ | s . = ™~ 2a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Wire,Delete,Package: CATPackageMethodObject Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+Wire,DistanceWireProduct,Package: CATPackageMethodObject Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+Wire,Elec_DistanceCommon,Package: CATPackageMethodObject Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+Wire,EndModifyTemplate,7 EndModifyTemplate (template: Feature): VoidType Package: CATPackageGenerativeKnowledge 5 | lame ez . =e ~S ol S&aesS @Q@@ Lethe O77 Bw & BD B ([comaiarsar OD betrernvexcsicee @®
+Wire,Find,"7 Feature->Find (Type: String, Condition: String, Down: Boolean): UndefinedType Package: CATPackageMethodFind 5 ! ~ | s . = ™~ 2a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Wire,GetAttributeBoolean,7 Feature->GetAttributeBoolean (String): Boolean Package: CATPackageMethodObject 5 | ~/=a mt = . sR {Ae ol S&aesS @Q@@ Lethe O77 Bw & BD B ([comaiarsar OD betrernvexcsicee @®
+Wire,GetAttributeInteger,7 Feature->GetAttributelnteger (String): Integer Package: CATPackageMethodObject 5 ! x. |! 2 . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Wire,GetAttributeObject,7 Feature->GetAttributeObject (String): UndefinedType Package: CATPackageMethodObject 5 ! x. |! 2 . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Wire,GetAttributeReal,"7 Feature->GetAttributeReal (String): Real Package: CATPackageMethodObject = | ys ! ZN a, FR “7 a nw 2 Sli se @@ Lethe ea 7a SRD 8 eae econ @"
+Wire,GetAttributeString,7 Feature->GetAttributeString (String): String Package: CATPackageMethodObject 5 ! x. |! 2 . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Wire,GetPartFeature,7 GetPartFeature (iFeature: Feature): Part Package: CATPackageMethodTlg = ] ] s . Pe m2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Wire,HasAttribute,"7 Feature->HasAttribute (String): Boolean Package: CATPackageMethodObject = | ys ! ZN a, FR “7 a nw 2 Sli se @@ Lethe ea 7a SRD 8 eae econ @"
+Wire,IsOwnedBy,7 Feature->lsOwnedBy (owner: Feature): Boolean Package: CATPackageMethodObject = ] y s . Pe m2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Wire,IsOwnedByString,7 Feature->lsOwnedByString (OwnerName: String): Boolean Package: KnowledgeExpertFunctions = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y
+Wire,IsPatternInstanceLocked,7 IsPatternInstanceLocked (patterninstance: Feature): Boolean Package: CATPackageGenerativeKnowledge = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y
+Wire,IsSupporting,7 Feature->IsSupporting (typeName: String): Boolean Package: CATPackageMethodObject 5 | ~/=a mt = . sR {Ae ol S&aesS @Q@@ Lethe O77 Bw & BD B ([comaiarsar OD betrernvexcsicee @®
+Wire,ListAllOuterLayerObjects,7 Feature->IsSupporting (typeName: String): Boolean Package: CATPackageMethodObject 5 | ~/=a mt = . sR {Ae ol S&aesS @Q@@ Lethe O77 Bw & BD B ([comaiarsar OD betrernvexcsicee @®
+Wire,ListAttributeNames,"7 Feature->ListAttributeNames (Typefitter: String, DynamicOnly: Boolean): List Package: CATPackageMethodObject = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Wire,ListDirectlyCoveredObjects,"7 Feature->ListAttributeNames (Typefitter: String, DynamicOnly: Boolean): List Package: CATPackageMethodObject = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Wire,ListDirectlyOuterLayerObjects,"7 Feature->ListAttributeNames (Typefitter: String, DynamicOnly: Boolean): List Package: CATPackageMethodObject = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Wire,ListUsedSupportsWithAbscissa,"7 Feature->ListAttributeNames (Typefitter: String, DynamicOnly: Boolean): List Package: CATPackageMethodObject = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Wire,LockPatternInstance,"7 LockPatterninstance (patterninstance: Feature, doLock: Boolean): VoidType Package: CATPackageGenerativeKnowledge | | — oe Al >'@O Leh 7 aS RD 8 leases com @ & &] fey 074 RS [OO (< ofa 4 7 ee a 3S S| Geometrical Set.1 O Define In Were Cbiect [OO"
+Wire,Query,"Z Feature->Query (Type: String, Condition: String): List Package: CATPackageMethodFind Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @ fe € @ é oes “4 EF IP) B [ceometical set efine vitor viet"
+Wire,SetAttributeBoolean,"7 Feature->SetAttributeBoolean (String, Boolean}: VoidType Package: CATPackageMethodObject 5 ! ~ | s . = ™~ 2a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Wire,SetAttributeDimension,"7 Feature->SetAttributeDimension (String, Real, String): VoidType Package: CATPackageMethodObject = ] y GIN s . as oer | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Wire,SetAttributeInteger,"7 Feature->SetAttributelnteger (String, Integer): VoidType Package: CATPackageMethodObject 5 ! ~ | s . = ™~ 2a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Wire,SetAttributeObject,"7 Feature->SetAttributeO bject (String, Feature): VoidType Package: CATPackageMethodObject 5 ! ~ | s . = ™~ 2a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Wire,SetAttributeReal,"7 Feature->SetAttributeReal (String, Real): VoidType Package: CATPackageMethodObject 5 ! x. |! 2 . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Wire,SetAttributeString,"7 Feature->SetAttributeString (String, String): VoidType Package: CATPackageMethodObject 5 ! ~ | s . = ™~ 2a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Wire,Update,7 Feature->Update 0: VoidType Package: CATPackageMethodObject = | | . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Wire,VisualMode,7 Feature->Update 0: VoidType Package: CATPackageMethodObject = | | . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Wire,-------- ObjectType --------,7 Feature->Update 0: VoidType Package: CATPackageMethodObject = | | . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Wire,List,Package: CATPackageMethodList Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+Product,-------- Product --------,Package: CATPackageMethodList Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+Product,CreateConstraint,"Product-»CreateConstraint (name: String, type: String, element: ObjectType, ..): UndefinedType Package: CATPackageGenerativeKnowledge = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Product,CreatePathString,"7 Product->CreatePathString {instance: Feature, element: ObjectType): String Package: CATPackageGenerativeKnowledge | | — oe Al >'@O Leh 7 aS RD 8 leases com @ & &] fey 074 RS [OO (< ofa 4 7 ee a 3S S| Geometrical Set.1 O Define In Were Cbiect [OO"
+Product,CreatePublication,"Product-»CreatePublication (instance: Product, published element: Objectlype, name: String): String Package: CATPackageGenerativeKnowledge = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Product,DefineInterferenceComputation,"DefineinterferenceComputation (p1: Product, p2: Product, TypCakc: String, ClearVal: Length, NameShape!: String, NameShape2: String, totoRule: Expert Rule): Boolean Package: SpalTFCheckMethod = ] \ ] SiN 2 . > - a | &] fey 074 RS [OO aH ofa m3 ia | 7 a Ge ee = rim) S| Geometrical Set.1 | O Define In werk Coiect [OO"
+Product,DistanceMin,"7 DistanceMin (p1: Product, p2: Product, ...): Length Package: SpaFunctionsPackage = ] y s . Pe m2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Product,GetLocation,"7 Product-»GetLocation (out Real, out Real, out Real): Boolean Package: ProductFunctionsPackage = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Product,HasARepresentation,7 Product->HasARepresentation (String): Boolean Package: ProductFunctionsPackage = ] y o . a om a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Product,IsIncludedIn,"7 IsIncludedin (p1: Product, p2: Product): Boolean Package: SpaFunctionsPackage = ] ] s . Pe m2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Product,ManageInstance,"Product-»Managelnstance (catalogid (ARM): String, chapterName: String, queryExpression: String, instanceName: String): Product Package: CATPackageGenerativeKnowledge = ] \ ] SiN 2 . > - a | &] fey 074 RS [OO aH ofa m3 ia | 7 a Ge ee = rim) S| Geometrical Set.1 | O Define In werk Coiect [OO"
+Product,PenetrationMax,"7 PenetrationMax (p1: Product, p2: Product, ...): Length Package: SpaFunctionsPackage = ] y s . Pe m2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Product,RemoveInstance,7 Product-»Removelnstance (instanceName: String): Product Package: CATPackageGenerativeKnowledge = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y
+Product,-------- Feature --------,7 Product-»Removelnstance (instanceName: String): Product Package: CATPackageGenerativeKnowledge = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y
+Product,AbsoluteId,7 Feature->Absoluteld 0: String Package: CATPackageMethodObject = J y GIN o “7 - > 2 Sl BS @@ Lette 7 eS RD S cama PO renmercor @
+Product,Access,"7 Feature->Access (Path: String, Type: String}: UndefinedType Package: CATPackageMethodFind 5 ! x. |! 2 . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Product,ActivateInactivateFeature,7 Feature->ActivatelnactivateFeature (activate: Boolean): VoidType Package: CATPackageMethodMeasures = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y
+Product,AddExtension,7 Feature->AddExtension (type: String): UndefinedType Package: CATPackageMethodObject 5 ! x. |! 2 . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Product,AttributeType,7 Feature->Attributelype (AttributeName: String): String Package: CATPackageMethodObject 5 ! ~ | s . = ™~ 2a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Product,Delete,Package: CATPackageMethodObject Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+Product,DistanceWireProduct,Package: CATPackageMethodObject Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+Product,Elec_DistanceCommon,Package: CATPackageMethodObject Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+Product,EndModifyTemplate,7 EndModifyTemplate (template: Feature): VoidType Package: CATPackageGenerativeKnowledge 5 | lame ez . =e ~S ol S&aesS @Q@@ Lethe O77 Bw & BD B ([comaiarsar OD betrernvexcsicee @®
+Product,Find,"7 Feature->Find (Type: String, Condition: String, Down: Boolean): UndefinedType Package: CATPackageMethodFind 5 ! ~ | s . = ™~ 2a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Product,GetAttributeBoolean,7 Feature->GetAttributeBoolean (String): Boolean Package: CATPackageMethodObject 5 | ~/=a mt = . sR {Ae ol S&aesS @Q@@ Lethe O77 Bw & BD B ([comaiarsar OD betrernvexcsicee @®
+Product,GetAttributeInteger,7 Feature->GetAttributelnteger (String): Integer Package: CATPackageMethodObject 5 ! x. |! 2 . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Product,GetAttributeObject,7 Feature->GetAttributeObject (String): UndefinedType Package: CATPackageMethodObject 5 ! x. |! 2 . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Product,GetAttributeReal,"7 Feature->GetAttributeReal (String): Real Package: CATPackageMethodObject = | ys ! ZN a, FR “7 a nw 2 Sli se @@ Lethe ea 7a SRD 8 eae econ @"
+Product,GetAttributeString,7 Feature->GetAttributeString (String): String Package: CATPackageMethodObject 5 ! x. |! 2 . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Product,GetPartFeature,7 GetPartFeature (iFeature: Feature): Part Package: CATPackageMethodTlg = ] ] s . Pe m2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Product,HasAttribute,"7 Feature->HasAttribute (String): Boolean Package: CATPackageMethodObject = | ys ! ZN a, FR “7 a nw 2 Sli se @@ Lethe ea 7a SRD 8 eae econ @"
+Product,IsOwnedBy,7 Feature->lsOwnedBy (owner: Feature): Boolean Package: CATPackageMethodObject = ] y s . Pe m2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Product,IsOwnedByString,7 Feature->lsOwnedByString (OwnerName: String): Boolean Package: KnowledgeExpertFunctions = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y
+Product,IsPatternInstanceLocked,7 IsPatternInstanceLocked (patterninstance: Feature): Boolean Package: CATPackageGenerativeKnowledge = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y
+Product,IsSupporting,7 Feature->IsSupporting (typeName: String): Boolean Package: CATPackageMethodObject 5 | ~/=a mt = . sR {Ae ol S&aesS @Q@@ Lethe O77 Bw & BD B ([comaiarsar OD betrernvexcsicee @®
+Product,ListAllOuterLayerObjects,7 Feature->IsSupporting (typeName: String): Boolean Package: CATPackageMethodObject 5 | ~/=a mt = . sR {Ae ol S&aesS @Q@@ Lethe O77 Bw & BD B ([comaiarsar OD betrernvexcsicee @®
+Product,ListAttributeNames,"7 Feature->ListAttributeNames (Typefitter: String, DynamicOnly: Boolean): List Package: CATPackageMethodObject = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Product,ListDirectlyCoveredObjects,"7 Feature->ListAttributeNames (Typefitter: String, DynamicOnly: Boolean): List Package: CATPackageMethodObject = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Product,ListDirectlyOuterLayerObjects,"7 Feature->ListAttributeNames (Typefitter: String, DynamicOnly: Boolean): List Package: CATPackageMethodObject = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Product,ListUsedSupportsWithAbscissa,"7 Feature->ListAttributeNames (Typefitter: String, DynamicOnly: Boolean): List Package: CATPackageMethodObject = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Product,LockPatternInstance,"7 LockPatterninstance (patterninstance: Feature, doLock: Boolean): VoidType Package: CATPackageGenerativeKnowledge | | — oe Al >'@O Leh 7 aS RD 8 leases com @ & &] fey 074 RS [OO (< ofa 4 7 ee a 3S S| Geometrical Set.1 O Define In Were Cbiect [OO"
+Product,Query,"Z Feature->Query (Type: String, Condition: String): List Package: CATPackageMethodFind Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @ fe € @ é oes “4 EF IP) B [ceometical set efine vitor viet"
+Product,SetAttributeBoolean,"7 Feature->SetAttributeBoolean (String, Boolean}: VoidType Package: CATPackageMethodObject 5 ! ~ | s . = ™~ 2a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Product,SetAttributeDimension,"7 Feature->SetAttributeDimension (String, Real, String): VoidType Package: CATPackageMethodObject = ] y GIN s . as oer | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Product,SetAttributeInteger,"7 Feature->SetAttributelnteger (String, Integer): VoidType Package: CATPackageMethodObject 5 ! ~ | s . = ™~ 2a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Product,SetAttributeObject,"7 Feature->SetAttributeO bject (String, Feature): VoidType Package: CATPackageMethodObject 5 ! ~ | s . = ™~ 2a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Product,SetAttributeReal,"7 Feature->SetAttributeReal (String, Real): VoidType Package: CATPackageMethodObject 5 ! x. |! 2 . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Product,SetAttributeString,"7 Feature->SetAttributeString (String, String): VoidType Package: CATPackageMethodObject 5 ! ~ | s . = ™~ 2a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Product,Update,7 Feature->Update 0: VoidType Package: CATPackageMethodObject = | | . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Product,VisualMode,7 Feature->Update 0: VoidType Package: CATPackageMethodObject = | | . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Product,-------- ObjectType --------,7 Feature->Update 0: VoidType Package: CATPackageMethodObject = | | . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Product,List,Package: CATPackageMethodList Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+Feature,-------- Feature --------,Package: CATPackageMethodList Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+Feature,AbsoluteId,7 Feature->Absoluteld 0: String Package: CATPackageMethodObject = J y GIN o “7 - > 2 Sl BS @@ Lette 7 eS RD S cama PO renmercor @
+Feature,Access,"7 Feature->Access (Path: String, Type: String}: UndefinedType Package: CATPackageMethodFind 5 ! x. |! 2 . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Feature,ActivateInactivateFeature,7 Feature->ActivatelnactivateFeature (activate: Boolean): VoidType Package: CATPackageMethodMeasures = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y
+Feature,AddExtension,7 Feature->AddExtension (type: String): UndefinedType Package: CATPackageMethodObject 5 ! x. |! 2 . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Feature,AttributeType,7 Feature->Attributelype (AttributeName: String): String Package: CATPackageMethodObject 5 ! ~ | s . = ™~ 2a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Feature,Delete,Package: CATPackageMethodObject Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+Feature,DistanceWireProduct,Package: CATPackageMethodObject Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+Feature,Elec_DistanceCommon,Package: CATPackageMethodObject Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+Feature,EndModifyTemplate,7 EndModifyTemplate (template: Feature): VoidType Package: CATPackageGenerativeKnowledge 5 | lame ez . =e ~S ol S&aesS @Q@@ Lethe O77 Bw & BD B ([comaiarsar OD betrernvexcsicee @®
+Feature,Find,"7 Feature->Find (Type: String, Condition: String, Down: Boolean): UndefinedType Package: CATPackageMethodFind 5 ! ~ | s . = ™~ 2a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Feature,GetAttributeBoolean,7 Feature->GetAttributeBoolean (String): Boolean Package: CATPackageMethodObject 5 | ~/=a mt = . sR {Ae ol S&aesS @Q@@ Lethe O77 Bw & BD B ([comaiarsar OD betrernvexcsicee @®
+Feature,GetAttributeInteger,7 Feature->GetAttributelnteger (String): Integer Package: CATPackageMethodObject 5 ! x. |! 2 . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Feature,GetAttributeObject,7 Feature->GetAttributeObject (String): UndefinedType Package: CATPackageMethodObject 5 ! x. |! 2 . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Feature,GetAttributeReal,"7 Feature->GetAttributeReal (String): Real Package: CATPackageMethodObject = | ys ! ZN a, FR “7 a nw 2 Sli se @@ Lethe ea 7a SRD 8 eae econ @"
+Feature,GetAttributeString,7 Feature->GetAttributeString (String): String Package: CATPackageMethodObject 5 ! x. |! 2 . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Feature,GetPartFeature,7 GetPartFeature (iFeature: Feature): Part Package: CATPackageMethodTlg = ] ] s . Pe m2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Feature,HasAttribute,"7 Feature->HasAttribute (String): Boolean Package: CATPackageMethodObject = | ys ! ZN a, FR “7 a nw 2 Sli se @@ Lethe ea 7a SRD 8 eae econ @"
+Feature,IsOwnedBy,7 Feature->lsOwnedBy (owner: Feature): Boolean Package: CATPackageMethodObject = ] y s . Pe m2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Feature,IsOwnedByString,7 Feature->lsOwnedByString (OwnerName: String): Boolean Package: KnowledgeExpertFunctions = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y
+Feature,IsPatternInstanceLocked,7 IsPatternInstanceLocked (patterninstance: Feature): Boolean Package: CATPackageGenerativeKnowledge = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y
+Feature,IsSupporting,7 Feature->IsSupporting (typeName: String): Boolean Package: CATPackageMethodObject 5 | ~/=a mt = . sR {Ae ol S&aesS @Q@@ Lethe O77 Bw & BD B ([comaiarsar OD betrernvexcsicee @®
+Feature,ListAllOuterLayerObjects,7 Feature->IsSupporting (typeName: String): Boolean Package: CATPackageMethodObject 5 | ~/=a mt = . sR {Ae ol S&aesS @Q@@ Lethe O77 Bw & BD B ([comaiarsar OD betrernvexcsicee @®
+Feature,ListAttributeNames,"7 Feature->ListAttributeNames (Typefitter: String, DynamicOnly: Boolean): List Package: CATPackageMethodObject = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Feature,ListDirectlyCoveredObjects,"7 Feature->ListAttributeNames (Typefitter: String, DynamicOnly: Boolean): List Package: CATPackageMethodObject = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Feature,ListDirectlyOuterLayerObjects,"7 Feature->ListAttributeNames (Typefitter: String, DynamicOnly: Boolean): List Package: CATPackageMethodObject = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Feature,ListUsedSupportsWithAbscissa,"7 Feature->ListAttributeNames (Typefitter: String, DynamicOnly: Boolean): List Package: CATPackageMethodObject = ] y ZN 2 . a ma | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Feature,LockPatternInstance,"7 LockPatterninstance (patterninstance: Feature, doLock: Boolean): VoidType Package: CATPackageGenerativeKnowledge | | — oe Al >'@O Leh 7 aS RD 8 leases com @ & &] fey 074 RS [OO (< ofa 4 7 ee a 3S S| Geometrical Set.1 O Define In Were Cbiect [OO"
+Feature,Query,"Z Feature->Query (Type: String, Condition: String): List Package: CATPackageMethodFind Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @ fe € @ é oes “4 EF IP) B [ceometical set efine vitor viet"
+Feature,SetAttributeBoolean,"7 Feature->SetAttributeBoolean (String, Boolean}: VoidType Package: CATPackageMethodObject 5 ! ~ | s . = ™~ 2a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Feature,SetAttributeDimension,"7 Feature->SetAttributeDimension (String, Real, String): VoidType Package: CATPackageMethodObject = ] y GIN s . as oer | &] fey 074 RS [Oo aH see m3 ia | ; a Ge ee = rim) 2 | Geometrical Set.1 ¥|Ocefine In iverc Coie @Y"
+Feature,SetAttributeInteger,"7 Feature->SetAttributelnteger (String, Integer): VoidType Package: CATPackageMethodObject 5 ! ~ | s . = ™~ 2a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Feature,SetAttributeObject,"7 Feature->SetAttributeO bject (String, Feature): VoidType Package: CATPackageMethodObject 5 ! ~ | s . = ™~ 2a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Feature,SetAttributeReal,"7 Feature->SetAttributeReal (String, Real): VoidType Package: CATPackageMethodObject 5 ! x. |! 2 . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Feature,SetAttributeString,"7 Feature->SetAttributeString (String, String): VoidType Package: CATPackageMethodObject 5 ! ~ | s . = ™~ 2a Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @"
+Feature,Update,7 Feature->Update 0: VoidType Package: CATPackageMethodObject = | | . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Feature,VisualMode,7 Feature->Update 0: VoidType Package: CATPackageMethodObject = | | . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Feature,-------- ObjectType --------,7 Feature->Update 0: VoidType Package: CATPackageMethodObject = | | . py mo 2 Clie ee @@ LewQtAe' 7 SRD S nae Ootirenmercrer @
+Feature,List,Package: CATPackageMethodList Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+ObjectType,-------- ObjectType --------,Package: CATPackageMethodList Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @
+ObjectType,List,Package: CATPackageMethodList Sl hi BS WDA Ls 7 eS BRD & [mers JO einen eccccer @

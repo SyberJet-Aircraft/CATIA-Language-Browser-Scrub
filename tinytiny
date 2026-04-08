@@ -1,0 +1,9 @@
+from pywinauto import Desktop
+
+for w in Desktop(backend="win32").windows():
+    try:
+        title = w.window_text()
+        if "Language" in title or "CATIA" in title:
+            print(repr(title), w.handle)
+    except Exception:
+        pass

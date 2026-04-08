@@ -1,0 +1,58 @@
+from pywinauto import Desktop
+from pywinauto.keyboard import send_keys
+import time
+
+LANG_TITLE = "Language browser"
+
+
+def safe_text(ctrl):
+    try:
+        t = ctrl.window_text()
+        return t.strip() if t else ""
+    except Exception:
+        return ""
+
+
+def get_type_button_and_edit(lang):
+    for c in lang.descendants():
+        try:
+            if safe_text(c) == "CATKweTypeChooserEditor":
+                button = None
+                edit = None
+                for child in c.children():
+                    cls = ""
+                    try:
+                        cls = child.friendly_class_name()
+                    except Exception:
+                        pass
+
+                    if cls == "Button" and safe_text(child) == "...":
+                        button = child
+                    elif cls == "Edit":
+                        edit = child
+
+                if button is not None and edit is not None:
+                    return button, edit
+        except Exception:
+            pass
+
+    raise RuntimeError("Could not find chooser editor/button/edit")
+
+
+lang = Desktop(backend="win32").window(title=LANG_TITLE)
+lang.wait("visible", timeout=10)
+
+button, edit = get_type_button_and_edit(lang)
+
+print("Current type:", safe_text(edit))
+
+button.click_input()
+time.sleep(0.5)
+
+print("Sent DOWN + ENTER")
+send_keys("{DOWN}")
+time.sleep(0.2)
+send_keys("{ENTER}")
+time.sleep(0.5)
+
+print("New type:", safe_text(edit))

@@ -1,0 +1,19 @@
+from pywinauto import Desktop
+
+print("=== UIA top-level windows ===")
+for w in Desktop(backend="uia").windows():
+    try:
+        title = w.window_text()
+        if "CATIA" in title.upper() or "LANG" in title.upper():
+            print(repr(title), w.handle)
+    except:
+        pass
+
+print("\n=== Win32 top-level windows ===")
+for w in Desktop(backend="win32").windows():
+    try:
+        title = w.window_text()
+        if "CATIA" in title.upper() or "LANG" in title.upper():
+            print(repr(title), w.handle)
+    except:
+        pass

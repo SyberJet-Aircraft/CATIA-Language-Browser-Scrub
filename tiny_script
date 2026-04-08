@@ -1,0 +1,11 @@
+from pywinauto import Application
+
+app = Application(backend="win32").connect(title="Language browser")
+lang = app.window(title="Language browser")
+
+print("Language browser children:")
+for child in lang.children():
+    try:
+        print(child.friendly_class_name(), repr(child.window_text()))
+    except Exception as e:
+        print("ERR", e)

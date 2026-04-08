@@ -1,0 +1,23 @@
+from pywinauto import Application
+
+def dump(ctrl, depth=0, max_depth=4):
+    if depth > max_depth:
+        return
+    try:
+        cls = ctrl.friendly_class_name()
+    except:
+        cls = "?"
+    try:
+        txt = ctrl.window_text()
+    except:
+        txt = ""
+    print("  " * depth + f"{cls}: {repr(txt)}")
+    try:
+        for child in ctrl.children():
+            dump(child, depth + 1, max_depth)
+    except:
+        pass
+
+app = Application(backend="win32").connect(title="Language browser")
+lang = app.window(title="Language browser")
+dump(lang, max_depth=5)
