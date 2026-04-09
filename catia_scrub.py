@@ -17,7 +17,7 @@ CATIA_TITLE = "CATIA V5"
 LANG_TITLE = "Language browser"
 TYPE_DIALOG_TITLE = "Select a Type"
 
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
 
 # ── Timing (seconds) ────────────────────────────────────────────────────────
 TYPE_OPEN_DELAY = 0.8          # wait after clicking "..." for dialog to appear

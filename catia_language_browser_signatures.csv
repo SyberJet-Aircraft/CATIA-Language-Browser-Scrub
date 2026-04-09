@@ -27,3 +27,46 @@
 2DArc,SetAttributeString,"Feature->SetAttributeString (String, String): VoidType"
 2DArc,Update,Feature->Update(): VoidType
 2DArc,List,"List (Next: ObjectType, ...): List"
+PPInstruction,NotNextInSequence,NotNextinSequence (A Machining Operation: Manufacturing Activity): Boolean
+PPInstruction,SequencedBefore,SequencedBefore (A Machining Operation: Manufacturing Activity): Boolean
+PPInstruction,ActivateInactivateFeature,ActivateInactivateFeature (activate: Boolean): VoidType
+PPInstruction,AddExtension,AddExtension (type: String): UndefinedType
+PPInstruction,Delete,Delete(): VoidType
+PPInstruction,Find,"Find (Type: String, Con dition: String, Down: Boolean): UndefinedType"
+PPInstruction,GetAttributeBoolean,GetAttributeBoolean (String): Boolean
+PPInstruction,GetAttributeInteger,GetAttributeInteger (String): Integer
+PPInstruction,GetAttributeReal,GetAttributeReal (String): Real
+PPInstruction,HasAttribute,HasAttribute (String): Boolean
+PPInstruction,ListAttributeNames,"ListAttributeNames (TypeFilter: String, DynamicOnly: Boolean): List"
+PPInstruction,SetAttributeBoolean,"SetAttributeBoolean (String, Boolean): VoidType"
+PPInstruction,SetAttributeDimension,"SetAttributeDimension (String, Real, String): VoidType"
+PPInstruction,SetAttributeInteger,"SetAttributeInteger (String, Integer): VoidType"
+PPInstruction,SetAttributeObject,"SetAttributeObject (String, Feature): VoidType"
+PPInstruction,SetAttributeReal,"SetAttributeReal (String, Real): VoidType"
+PPInstruction,SetAttributeString,"SetAttributeString (String, String): VoidType"
+PPInstruction,Update,Update(): VoidType
+PredefinedFlange,GetNearSubElements,"GetNearSubElements (dimension: Integer, geoFeature: Geometric feature): List"
+PredefinedFlange,GetSubElements,"GetSubElements (dimension: Integer, duplicates: Boolean): List"
+PredefinedFlange,Access,"Access (Path: String, Type: String): UndefinedType"
+PRESSURE,-,"- (al: Real, a2: Real): Real"
+PRESSURE,*,"* (al: Real, a2: Real): Real"
+PRESSURE,/,"/ (ai: Real, a2: Real): Real"
+PRESSURE,+,"+ (a1: Real, a2: Real): Real"
+PRESSURE,<,"< (a1: Real, a2: Real): Boolean"
+PRESSURE,<=,"<= (al: Real, a2: Real): Boolean"
+PRESSURE,<>,"<> (al: Real, a2: Real): Boolean"
+PRESSURE,=,"= (a1: out Real, a2: Real): VoidType"
+PRESSURE,==,"== (a1: Real, a2: Real): Boolean"
+PRESSURE,>,"> (a1: Real, a2: Real): Boolean"
+PRESSURE,>=,">= (al: Real, a2: Real): Boolean"
+PRESSURE,abs,abs (Real): Real
+PRESSURE,acos,acos (Real): Angle
+PRESSURE,acosh,acosh (Real): Real
+PRESSURE,asin,asin (Real): Angle
+PRESSURE,asinh,asinh (Real): Real
+PRESSURE,atan,atan (Real): Angle
+PRESSURE,ceil,ceil (Real): Real
+PRESSURE,cos,cos (Real): Real
+PRESSURE,cosh,cosh (Real): Real
+PRESSURE,exp,exp (Real): Real
+PRESSURE,floor,floor (Real): Real
