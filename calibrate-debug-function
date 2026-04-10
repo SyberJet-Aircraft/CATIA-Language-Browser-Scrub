@@ -1,0 +1,30 @@
+import time
+import pyautogui
+from pywinauto import Desktop
+from PIL import Image, ImageDraw
+import mss
+
+# Paste your values from the pyautogui script here
+tip_left   = 3300  # replace with your x1
+tip_top    = 1870   # replace with your y1
+tip_width  = 470   # replace with x2-x1
+tip_height = 120    # replace with y2-y1
+
+with mss.mss() as sct:
+    mon = sct.monitors[3]  # CATIA monitor
+    shot = sct.grab(mon)
+    full = Image.frombytes("RGB", shot.size, shot.rgb)
+
+monitor_left = mon["left"]  # 0
+monitor_top  = mon["top"]   # 0
+
+draw = ImageDraw.Draw(full)
+draw.rectangle([
+    tip_left   - monitor_left,
+    tip_top    - monitor_top,
+    tip_left   - monitor_left + tip_width,
+    tip_top    - monitor_top  + tip_height,
+], outline="red", width=4)
+
+full.save(r"C:\Users\AdamPetrillo\Desktop\ocr_region_debug.png")
+print("Saved!")

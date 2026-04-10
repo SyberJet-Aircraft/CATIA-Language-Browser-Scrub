@@ -1,0 +1,24 @@
+import time
+import pyautogui
+
+print("Move your mouse to the TOP-LEFT corner of the tooltip box and wait 5 seconds...")
+time.sleep(5)
+x1, y1 = pyautogui.position()
+print(f"Top-left: {x1}, {y1}")
+
+print("Now move to the BOTTOM-RIGHT corner of the tooltip box and wait 5 seconds...")
+time.sleep(5)
+x2, y2 = pyautogui.position()
+print(f"Bottom-right: {x2}, {y2}")
+
+from pywinauto import Desktop
+catia = Desktop(backend="win32").window(title_re=".*CATIA V5.*")
+catia.wait("visible", timeout=15)
+rect = catia.rectangle()
+print(f"\nCATIA window: left={rect.left} top={rect.top} width={rect.width()} height={rect.height()}")
+
+# Calculate the ratios from your actual mouse positions
+print(f"\nleft_ratio   = {(x1 - rect.left) / rect.width():.3f}")
+print(f"top_ratio    = {(y1 - rect.top)  / rect.height():.3f}")
+print(f"width_ratio  = {(x2 - x1) / rect.width():.3f}")
+print(f"height_ratio = {(y2 - y1) / rect.height():.3f}")

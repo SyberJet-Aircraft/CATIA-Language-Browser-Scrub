@@ -1,0 +1,22 @@
+import time
+import pyautogui
+from pywinauto import Desktop
+
+catia = Desktop(backend="win32").window(title_re=".*CATIA V5.*")
+catia.wait("visible", timeout=15)
+rect = catia.rectangle()
+print(f"pywinauto rect: left={rect.left} top={rect.top} right={rect.right} bottom={rect.bottom} w={rect.width()} h={rect.height()}")
+
+print("\nHover over TOP-LEFT of the tooltip, hold still for 5 seconds...")
+time.sleep(5)
+x1, y1 = pyautogui.position()
+print(f"  top-left: {x1}, {y1}")
+
+print("Hover over BOTTOM-RIGHT of the tooltip, hold still for 5 seconds...")
+time.sleep(5)
+x2, y2 = pyautogui.position()
+print(f"  bottom-right: {x2}, {y2}")
+
+print(f"\nTooltip absolute pixels: left={x1} top={y1} width={x2-x1} height={y2-y1}")
+print(f"\nUse these directly in bbox:")
+print(f'bbox = {{"left": {x1}, "top": {y1}, "width": {x2-x1}, "height": {y2-y1}}}')

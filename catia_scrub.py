@@ -32,7 +32,16 @@ PROGRESS_JSON = "catia_language_browser_progress.json"
 
 # ── Set True to print every control found inside the type dialog (one-time
 #    diagnostic run so you can see what class names CATIA actually uses) ────
-DIAGNOSTIC_MODE = True
+DIAGNOSTIC_MODE = False
+
+# ── OCR capture region (absolute screen pixels) ─────────────────────────────
+# Tune these with the debug script if you change monitors or resolution
+OCR_BBOX = {
+    "left":   3300,
+    "top":    1870,
+    "width":  470,
+    "height": 120,
+}
 
 
 @dataclass
@@ -59,6 +68,11 @@ def is_separator(name: str) -> bool:
     return s.startswith("--------") and s.endswith("--------")
 
 
+def separator_inner(name: str) -> str:
+    """Extract the type name from inside a separator, e.g. '---- Foo ----' -> 'Foo'."""
+    return name.strip("-").strip()
+
+
 # ───────────────────────────────────────────────────────────────────────────
 # Window / control finders
 # ───────────────────────────────────────────────────────────────────────────
@@ -66,7 +80,6 @@ def is_separator(name: str) -> bool:
 def connect():
     lang = Desktop(backend="win32").window(title=LANG_TITLE)
     catia = Desktop(backend="win32").window(title_re=f".*{CATIA_TITLE}.*")
-
     lang.wait("visible", timeout=15)
     catia.wait("visible", timeout=15)
     return lang, catia
@@ -78,7 +91,6 @@ def get_functions_list(lang):
 
 def get_type_chooser_button(lang):
     """Return the '...' button that opens the type-selection dialog."""
-    # Strategy 1 – look for the button parented inside the CATKweTypeChooserEditor group
     for c in lang.descendants():
         try:
             if safe_text(c) == "CATKweTypeChooserEditor":
@@ -90,15 +102,12 @@ def get_type_chooser_button(lang):
                         pass
         except Exception:
             pass
-
-    # Strategy 2 – any Button labelled "..."
     for c in lang.descendants():
         try:
             if c.friendly_class_name() == "Button" and safe_text(c) == "...":
                 return c
         except Exception:
             pass
-
     raise RuntimeError("Could not find '...' type-chooser button in Language Browser")
 
 
@@ -141,21 +150,11 @@ def dump_dialog_controls(dialog):
 
 _LIST_CLASSES = {"ListBox", "SysListView32", "ListView"}
 _TREE_CLASSES = {"TreeView", "SysTreeView32"}
-# Raw Win32 class names that pywinauto sometimes reports instead of friendly names
-_RAW_LIST = {"ListBox", "SysListView32"}
-_RAW_TREE = {"SysTreeView32", "TreeView"}
+_RAW_LIST     = {"ListBox", "SysListView32"}
+_RAW_TREE     = {"SysTreeView32", "TreeView"}
 
 
 def find_list_or_tree(dialog):
-    """Return (control, 'list'|'tree') for the first list-like or tree-like
-    control inside the dialog, or (None, None).
-
-    Tries four strategies in order:
-    1. child_window by known title ('TypeList') – most reliable
-    2. friendly_class_name match
-    3. raw class_name() match
-    4. window_text contains 'list' heuristic
-    """
     # Strategy 1: CATIA's type listbox has window title 'TypeList'
     try:
         ctrl = dialog.child_window(title="TypeList").wrapper_object()
@@ -169,8 +168,6 @@ def find_list_or_tree(dialog):
             w = c.wrapper_object()
         except Exception:
             continue
-
-        # Strategy 2: friendly class name
         try:
             cls = w.friendly_class_name()
             if cls in _LIST_CLASSES:
@@ -179,8 +176,6 @@ def find_list_or_tree(dialog):
                 return w, "tree"
         except Exception:
             pass
-
-        # Strategy 3: raw Win32 class name
         try:
             raw = w.class_name()
             if raw in _RAW_LIST:
@@ -252,19 +247,16 @@ def confirm_type_dialog_ok(dialog):
 # ───────────────────────────────────────────────────────────────────────────
 
 def _items_from_control(ctrl, kind: str) -> List[str]:
-    """Extract a flat list of text items from a list or tree control."""
     names: List[str] = []
     try:
         if kind == "list":
             names = [t.strip() for t in ctrl.item_texts() if t and t.strip()]
         elif kind == "tree":
-            # Expand all nodes first so we can walk the full tree
             try:
                 ctrl.expand_all()
                 time.sleep(0.3)
             except Exception:
                 pass
-            # Walk every item in the tree
             try:
                 root = ctrl.roots()
                 stack = list(root)
@@ -281,7 +273,6 @@ def _items_from_control(ctrl, kind: str) -> List[str]:
                     except Exception:
                         pass
             except Exception:
-                # Fallback: try item_texts if available
                 try:
                     names = [t.strip() for t in ctrl.item_texts() if t and t.strip()]
                 except Exception:
@@ -308,7 +299,6 @@ def get_all_types_from_dialog(button) -> List[str]:
     print(f"[INFO] Type dialog uses control kind={kind!r}, class={ctrl.friendly_class_name()!r}")
     names = _items_from_control(ctrl, kind)
 
-    # Deduplicate while preserving order
     seen: Set[str] = set()
     unique: List[str] = []
     for n in names:
@@ -326,13 +316,10 @@ def get_all_types_from_dialog(button) -> List[str]:
 # ───────────────────────────────────────────────────────────────────────────
 
 def _select_in_list(ctrl, target: str) -> bool:
-    """Select target in a ListBox/ListView. Returns True on success."""
     try:
         items = ctrl.item_texts()
     except Exception:
         return False
-
-    # Exact match first
     for item in items:
         if item.strip().lower() == target.lower():
             try:
@@ -340,8 +327,6 @@ def _select_in_list(ctrl, target: str) -> bool:
                 return True
             except Exception:
                 pass
-
-    # Substring match fallback
     for item in items:
         if target.lower() in item.strip().lower():
             try:
@@ -349,17 +334,14 @@ def _select_in_list(ctrl, target: str) -> bool:
                 return True
             except Exception:
                 pass
-
     return False
 
 
 def _select_in_tree(ctrl, target: str) -> bool:
-    """Select target node in a TreeView. Returns True on success."""
     try:
         root = ctrl.roots()
     except Exception:
         return False
-
     stack = list(root)
     while stack:
         node = stack.pop(0)
@@ -384,7 +366,6 @@ def _select_in_tree(ctrl, target: str) -> bool:
 def select_type_via_dialog(button, target_type: str) -> bool:
     dlg = open_type_dialog(button)
 
-    # Try typing into the search/filter edit box if present
     edit = find_first_edit(dlg)
     if edit:
         try:
@@ -422,34 +403,56 @@ def select_type_via_dialog(button, target_type: str) -> bool:
 # Functions list helpers
 # ───────────────────────────────────────────────────────────────────────────
 
-def get_list_items(listbox) -> List[str]:
+def get_own_functions(listbox, type_name: str) -> List[str]:
+    """Return only the functions that belong to type_name itself.
+
+    The functions list is structured like:
+        -------- TypeName --------       <- section header for this type
+        OwnFunction1
+        OwnFunction2
+        -------- ParentType --------     <- start of inherited section, stop here
+
+    If the first separator's inner name does NOT match type_name, the type
+    has no own functions and we return [].
+    """
     try:
-        return [x.strip() for x in listbox.item_texts() if x and x.strip()]
+        all_items = listbox.item_texts()
     except Exception:
         return []
 
+    own: List[str] = []
+    in_own_section = False
+
+    for item in all_items:
+        s = item.strip()
+        if not s:
+            continue
+
+        if is_separator(s):
+            if not in_own_section:
+                inner = separator_inner(s)
+                if inner.lower() == type_name.lower():
+                    in_own_section = True   # found our section, start collecting
+                else:
+                    break                   # first separator isn't our type — bail
+            else:
+                break                       # hit the next section — stop
+        elif in_own_section:
+            own.append(s)
+
+    return own
+
 
 # ───────────────────────────────────────────────────────────────────────────
-# OCR – reading the signature tooltip / status area
+# OCR – reading the signature tooltip
 # ───────────────────────────────────────────────────────────────────────────
 
 def read_status_text_ocr(catia) -> str:
-    rect = catia.rectangle()
-
-    # The signature hint typically appears in the lower-right quarter of the
-    # CATIA window.  Tweak these ratios if your layout differs.
-    bbox = {
-        "left":   rect.left  + int(rect.width() * 0.50),
-        "top":    rect.top   + int(rect.height() * 0.82),
-        "width":  int(rect.width()  * 0.47),
-        "height": int(rect.height() * 0.15),
-    }
-
+    # Absolute pixel coords — tune with the debug script if you change monitors
     with mss.mss() as sct:
-        shot = sct.grab(bbox)
+        shot = sct.grab(OCR_BBOX)
         img = Image.frombytes("RGB", shot.size, shot.rgb)
 
-    # 2× upscale + binarise for better OCR accuracy
     img = img.resize((img.width * 2, img.height * 2), Image.LANCZOS)
     img = img.convert("L")
     img = img.point(lambda x: 0 if x < 175 else 255, mode="1")
@@ -466,23 +469,22 @@ def normalize_ocr_text(text: str) -> str:
     text = re.sub(r"\s+", " ", text).strip()
 
     replacements = {
-        "Absoluteld":                  "AbsoluteId",
-        "Attributelype":               "AttributeType",
-        "GetAttributelnteger":         "GetAttributeInteger",
-        "SetAttributelnteger":         "SetAttributeInteger",
-        "Removelnstance":              "RemoveInstance",
-        "Managelnstance":              "ManageInstance",
-        "ActivatelnactivateFeature":   "ActivateInactivateFeature",
-        "IsIncludedin":                "IsIncludedIn",
-        "LockPatterninstance":         "LockPatternInstance",
-        "Objectlype":                  "ObjectType",
-        "O bject":                     "Object",
-        "Typefitter":                  "TypeFilter",
+        "Absoluteld":                    "AbsoluteId",
+        "Attributelype":                 "AttributeType",
+        "GetAttributelnteger":           "GetAttributeInteger",
+        "SetAttributelnteger":           "SetAttributeInteger",
+        "Removelnstance":                "RemoveInstance",
+        "Managelnstance":                "ManageInstance",
+        "ActivatelnactivateFeature":     "ActivateInactivateFeature",
+        "IsIncludedin":                  "IsIncludedIn",
+        "LockPatterninstance":           "LockPatternInstance",
+        "Objectlype":                    "ObjectType",
+        "O bject":                       "Object",
+        "Typefitter":                    "TypeFilter",
         "DefineinterferenceComputation": "DefineInterferenceComputation",
     }
     for bad, good in replacements.items():
         text = text.replace(bad, good)
-
     return text
 
 
@@ -491,11 +493,9 @@ def extract_signature(raw_text: str, expected_fn: str) -> str:
     if not text:
         return ""
 
-    # Strip anything after "Package :" (unrelated metadata)
     text = re.split(r"\bPackage\s*:", text, maxsplit=1)[0].strip()
     text = re.sub(r"^[^A-Za-z]+", "", text)
 
-    # Pattern 1 – full qualified:  Type -> FnName(params) : ReturnType
     m = re.search(
         r"[A-Za-z_][A-Za-z0-9_]*\s*->\s*"
         + re.escape(expected_fn)
@@ -505,7 +505,6 @@ def extract_signature(raw_text: str, expected_fn: str) -> str:
     if m:
         return m.group(0).strip()
 
-    # Pattern 2 – unqualified:  FnName(params) : ReturnType
     m = re.search(
         re.escape(expected_fn) + r"\s*\([^)]*\)\s*:\s*[A-Za-z_][A-Za-z0-9_]*",
         text, flags=re.IGNORECASE,
@@ -513,7 +512,6 @@ def extract_signature(raw_text: str, expected_fn: str) -> str:
     if m:
         return m.group(0).strip()
 
-    # Pattern 3 – generic fallbacks
     for pat in (
         r"[A-Za-z_][A-Za-z0-9_]*\s*->\s*[A-Za-z_][A-Za-z0-9_]*\s*\([^)]*\)\s*:\s*[A-Za-z_][A-Za-z0-9_]*",
         r"[A-Za-z_][A-Za-z0-9_]*\s*\([^)]*\)\s*:\s*[A-Za-z_][A-Za-z0-9_]*",
@@ -529,10 +527,14 @@ def get_clean_signature(catia, expected_fn: str) -> str:
     raw = read_status_text_ocr(catia)
     sig = extract_signature(raw, expected_fn)
 
+    print(f"               [OCR raw] {raw!r}")
+    print(f"               [OCR sig] {sig!r}")
+
     if not sig or expected_fn.lower() not in sig.lower():
         time.sleep(OCR_RETRY_DELAY)
         raw2 = read_status_text_ocr(catia)
         sig2 = extract_signature(raw2, expected_fn)
+        print(f"               [OCR retry sig] {sig2!r}")
         if sig2:
             return sig2
 
@@ -601,7 +603,6 @@ def scrape() -> List[Row]:
     completed_types: Dict[str, List[Dict[str, str]]] = progress.get("completed_types", {})
     failed_types: List[str] = progress.get("failed_types", [])
 
-    # ── Phase 1: collect all type names ────────────────────────────────────
     type_names = get_all_types_from_dialog(type_button)
     if not type_names:
         raise RuntimeError(
@@ -617,7 +618,6 @@ def scrape() -> List[Row]:
     print(f"Completed   : {len(completed_types)}")
     print(f"Remaining   : {len(remaining_types)}\n")
 
-    # ── Phase 2: for each type, select it and scrape its functions ──────────
     for idx, type_name in enumerate(remaining_types, start=1):
         print(f"[{idx:>4}/{len(remaining_types)}] {type_name}")
 
@@ -631,11 +631,18 @@ def scrape() -> List[Row]:
                 save_progress(progress)
                 continue
 
-            # Brief settle time for the functions list to refresh
             time.sleep(0.3)
 
-            function_names = get_list_items(functions_list)
-            function_names = [fn for fn in function_names if not is_separator(fn)]
+            # Only grab functions belonging to this type, not inherited ones
+            function_names = get_own_functions(functions_list, type_name)
+
+            if not function_names:
+                print(f"           -> no own functions, skipping")
+                completed_types[type_name] = []
+                progress["completed_types"] = completed_types
+                progress["failed_types"] = [t for t in failed_types if t != type_name]
+                save_progress(progress)
+                continue
 
             type_rows: List[Row] = []
 

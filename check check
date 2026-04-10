@@ -1,0 +1,8 @@
+import pyautogui
+import mss
+
+print(f"pyautogui screen size: {pyautogui.size()}")
+
+with mss.mss() as sct:
+    for i, m in enumerate(sct.monitors):
+        print(f"mss monitor {i}: {m}")
