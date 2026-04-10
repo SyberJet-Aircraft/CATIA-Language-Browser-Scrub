@@ -37,10 +37,10 @@ DIAGNOSTIC_MODE = False
 # ── OCR capture region (absolute screen pixels) ─────────────────────────────
 # Tune these with the debug script if you change monitors or resolution
 OCR_BBOX = {
-    "left":   3300,
-    "top":    1870,
-    "width":  470,
-    "height": 120,
+    "left":   1112,
+    "top":    870,
+    "width":  772,
+    "height": 110,
 }
 
 

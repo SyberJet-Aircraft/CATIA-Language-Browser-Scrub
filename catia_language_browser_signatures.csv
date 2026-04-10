@@ -1,1 +1,127 @@
-﻿
+﻿object_type,function_name,signature
+2DPoint,point2dto3d,point2dto3d (2DPoint: Point): Point
+AdvisorAction,Run,"Action->Run (valueOrFeature: ObjectType, ...): VoidType"
+AnalysisSolution,bucklingfactors,bucklingfactors (Case: Analysis Results): List
+AnalysisSolution,dispmax,dispmax (Case: Analysis Results): Length
+AnalysisSolution,dispmaxongroup,"dispmaxongroup (Case: Analysis Results, Group: Group): Length"
+AnalysisSolution,energy,energy (Case: Analysis Results): Energy
+AnalysisSolution,frequencies,frequencies (Case: Analysis Results): List
+AnalysisSolution,frequency,"frequency (Case: Analysis Results, number Integer): Frequency"
+AnalysisSolution,globalerror,globalerror (Case: Analysis Results): Real
+AnalysisSolution,misesmax,misesmax (Case: Analysis Results): Pressure
+ArrangementPathway,FindSmallestBendRadius,FindSmallestBendRadius (): Real
+ArrangementSpatialLoft,FindSmallestBendRadius,Loft->FindSmallestBendRadius (): Real
+ArrRun,CheckBendablesForMaxBendRadius,AnRun->CheckBendablesForMaxBendRadius (MaxBendRadius: Length): Boolean
+ArrRun,CheckBendablesForMaxTotalRawLength,AnRun->CheckBendablesForMaxTotalRawLength (MaxRawLength: Length): Boolean
+ArrRun,CheckBendablesForMinGripLength,ArrRun->CheckBendablesForMinGripLength (MinGripLength: Length): Boolean
+AxisSystem,AxisSystemSetCurrent,System->AxisSystemSetCurrent (input2: Boolean): VoidType
+AxisSystem,GetRefAxisSystem,"System->GetRefAxisSystem (refAxis: out Feature, isRefSet: out Boolean, isNew: out Boolean): VoidType"
+AxisSystem,IsAxisSystemActive,System-> IsAxisSystemActive (isAxisSystemActive: out Boolean): VoidType
+Beam,SetColor,"Beam->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+BfmSpot,distance,"distance (BiW Spot, BiW Spot): Length"
+BfmSpot,LengthOnCurve,"LengthOnCurve (BiW Spot, BiW Spot): Length"
+Body,centerofgravity,"centerofgravity (Body, ...): Point"
+Body,disassemble,"disassemble (Input: Body, CellsMode: Boolean): List"
+Body,distance,"distance (Body, Body): Length"
+Body,distancedir,"distancedir (Body, Body, Direction): Length"
+Body,IsInfinite,IsInfinite (isinfinite: out Boolean): VoidType
+Body,nbDomains,nbDomains (Body): Integer
+Brace,SetColor,"Brace->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+CATCell,extract,"extract (cell: CATCell, propagationType (0: GO; 1: G1; 2: G2; other or no value: no propagation): Integer"
+CATEdge,length,length (CATEdge): Length
+CATFace,area,area (CATFace): Area
+CATSfmBlockSystemExt,SetColor,"Set->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+CATSfmOpeningExt,SetColor,"SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+CATSfmPanelExt,SetColor,"Plate->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+CATSfmSBlockExt,SetColor,"Volume->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+CATSfmStiffenerOnFreeEdgeExt,SetColor,"Edge->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+CATTPSBasicDim,GetRepresentationStrings,dimension->GetRepresentationStrings (ListOfRepStringsValueOutput: out List): Boolean
+CATTPSCoordDim,GetRepresentationStrings,GetRepresentationStrings (ListOfRepStringsValueQutput: out List): Boolean
+CATTPSFlagNote,GetRepresentationStrings,Note->GetRepresentationStrings (ListOfRepStringsValueOutput: out List): Boolean
+CATTPSNoa,GetRepresentationStrings,GetRepresentationStrings (ListOfRepStringsValueOutput: out List): Boolean
+CATTPSReferenceFrame,GetRepresentationStrings,Frame->GetRepresentationStrings (ListOfRepStringsValueOutput: out List): Boolean
+CATTPSRoughness,GetRepresentationStrings,texture->GetRepresentationStrings (ListOfRepStringsValueOutput: out List): Boolean
+CATTPSView,AddPlaneAssociativity,Plane->AddPlaneAssociativity (SupportPln: Plane): Integer
+CATTPSWeld,GetRepresentationStrings,Weld->GetRepresentationStrings (ListOfRepStringsValueOutput: out List): Boolean
+Circle,center,center (Circle): Point
+Column,SetColor,"Column->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+Curve,area,"area (Curve, ...): Area"
+Curve,assemble,"assemble (Curve, ...): Curve"
+Curve,axis,axis (curve: Curve): Line
+Curve,binormal,"binormal (crv: Curve, pt: Point): Line"
+Curve,conicsweep2GuideCurves,"conicsweep2GuideCurves (crv1: Curve, crvitangency: Surface, crv2: Curve, crv2tangency: Surface, spine: Curve): Surface"
+Curve,conicsweep3GuideCurves,"conicsweep3GuideCurves (crv1: Curve, crv tangency: Surface, crv2: Curve, crv3: Curve, crv3tangency: Surface, spine: Curve): Surface"
+Curve,conicsweep4GuideCurves,"conicsweep4GuideCurves (crv1: Curve, crv 1tangency: Surface, crv2: Curve, crv3: Curve, crv4: Curve, spine: Curve): Surface"
+Curve,conicsweep5GuideCurves,"conicsweep5GuideCurves (crv1: Curve, crv2: Curve, crv3: Curve, crv4: Curve, crv5: Curve, spine: Curve): Surface"
+Curve,curvature,"curvature (crv: Curve, pt: Point): Real"
+Curve,curvaturecenter,"curvaturecenter (crv: Curve, pt: Point): Point"
+Curve,curveparallel,"curveparallel (crv: Curve, sur: Surface, offset: Length, OptionalRoundMode: Boolean): Curve"
+Curve,extremum,"extremum (Curve, Direction, Boolean, Direction, Boolean, Direction, Boolean): Point"
+Curve,extrude,"extrude (Curve, Direction, length1: Length, length2: Length, orientation: Boolean): Surface"
+Curve,far,"far (crv: Curve, far: Wireframe): Curve"
+Curve,fill,"fill (Curve, ...): Surface"
+Curve,intersect,"intersect (Curve, Surface): Point"
+Curve,length,"length (Curve, ...): Length"
+Curve,lineangle,"lineangle (crv: Curve, sur: Surface, pt: Point, geodesic: Boolean, start: Length, end: Length, angle: Angle, orientation: Boolean): Line"
+Curve,linetangent,"linetangent (crv: Curve, pt: Point, start: Length, end: Length, orientation: Boolean): Line"
+Curve,mainnormal,"mainnormal (crv: Curve, pt: Point): Line"
+Curve,minimumCurvatureRadius,minimumCurvatureRadius (Curve): Length
+Curve,near,"near (crv: Curve, near: Wireframe): Curve"
+Curve,plane,plane (Curve): Plane
+Curve,planenormal,"planenormal (Curve, Point): Plane"
+Curve,pointoncurve,"pointoncurve (crv: Curve, pt: Point, distance: Length, orientation: Boolean): Point"
+Curve,pointoncurveRatio,"pointoncurveRatio (crv: Curve, pt: Point, ratio: Real, orientation: Boolean): Point"
+Curve,pointtangent,"pointtangent (Curve, Direction): Point"
+Curve,project,"project (toproject: Curve, support: Surface, OptionalDir: Direction): Curve"
+Curve,revolve,"revolve (Curve, axis: Line, angle1: Angle, angle2: Angle): Surface"
+Curve,split,"split (tosplit: Curve, splitting: Wireframe, orientation: Boolean): Curve"
+Curve,trim,"trim (crv1: Curve, orientationCrv1: Boolean, crv2: Curve, orientationCrv2: Boolean): Curve"
+DeckLongStiffener,SetColor,"Stiffener->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+DeckPanel,SetColor,"Deck->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+Direction,angle,"angle (Direction, Direction): Angle"
+Direction,angleoriented,"angleoriented (Direction, Direction, Direction): Angle"
+DTSheetType,CellAsBoolean,"Sheet->CellAsBoolean (rowlndex: Integer, columnindex: Integer): Boolean"
+DTSheetType,CellAsReal,"Sheet->CellAsReal (rowlndex: Integer, columnindex: Integer): Real"
+DTSheetType,CellAsString,"CellAsString (rowlndex: Integer, columnindex: Integer): String"
+DTSheetType,CloserConfig,"CloserConfig (columnName: String, sortType: String, minValue: Literal, ...): Integer"
+DTSheetType,CloserSupConfig,"CloserSupConfig (columnName: String, minValue: Literal, ...): Integer"
+DTSheetType,CloserValueSupInColumn,"Sheet->CloserValueSupInColumn (columnindex: Integer, value: Real): Real"
+DTSheetType,MaxInColumn,MaxInColumn (columnindex: Integer): Real
+DTSheetType,MinInColumn,Sheet->MinInColumn (columnindex: Integer): Real
+DTSheetType,SetCell,"SetCell (indexRow: Integer, indexColumn: Integer, cellValue: Literal): VoidType"
+ElecCable,CheckLengthByCableType,"CheckLengthByCableType (CableType: String, MaxLength: Length): Boolean"
+ElecCable,CheckLengthSumByCableType,"CheckLengthSumByCableType (CableType: String, MaxLength: Length): Boolean"
+ElecEquipmentFunction,CheckMaxNumberOfComponents,Function->CheckMaxNumberOfComponents (MaxNumberOfComponents: Integer): Boolean
+EquipPipingNozzleFunc,IsNominalSizeConsistent,Function->IsNominalSizeConsistent (): Boolean
+EquipPipingNozzleFunc,IsPipeSpecConsistent,Function->IsPipeSpecConsistent (): Boolean
+EquipTubingNozzleFunc,IsNominalSizeConsistent,IsNominalSizeConsistent (): Boolean
+EquipTubingNozzleFunc,IsTubeSpecConsistent,Function->IsTubeSpecConsistent (): Boolean
+Feature,AbsoluteId,AbsoluteId (): String
+Feature,Access,"Feature->Access (Path: String, Type: String): UndefinedType"
+Feature,ActivateInactivateFeature,Feature->ActivateInactivateFeature (activate: Boolean): Voidlype
+Feature,AddExtension,Feature->AddExtension (type: String): UndefinedType
+Feature,AttributeType,Feature->AttributeType (AttributeName: String): String
+Feature,Delete,Delete (): VoidType
+Feature,EndModifyTemplate,EndModifyTemplate (template: Feature): VoidType
+Feature,Find,"Feature->Find (Type: String, Condition: String, Down: Boolean): UndefinedType"
+Feature,GetAttributeBoolean,GetAttributeBoolean (String): Boolean
+Feature,GetAttributeInteger,Feature->GetAttributeInteger (String): Integer
+Feature,GetAttributeObject,GetAttributeObject (String): UndefinedType
+Feature,GetAttributeReal,GetAttributeReal (String): Real
+Feature,GetAttributeString,GetAttributeString (String): String
+Feature,GetPartFeature,GetPartFeature (iFeature: Feature): Part
+Feature,HasAttribute,HasAttribute (String): Boolean
+Feature,IsOwnedByString,IsOwnedByString (OwnerName: String): Boolean
+Feature,IsSupporting,Feature->IsSupporting (typeName: String): Boolean
+Feature,ListAttributeNames,"Feature->ListAttributeNames (TypeFilter: String, DynamicOnly: Boolean): List"
+Feature,Query,"Query (Type: String, Condition: String): List"
+Feature,SetAttributeBoolean,"Feature->SetAttributeBoolean (String, Boolean): VoidType"
+Feature,SetAttributeDimension,"Feature->SetAttributeDimension (String, Real, String): VoidType"
+Feature,SetAttributeInteger,"Feature->SetAttributeInteger (String, Integer): VoidType"
+Feature,SetAttributeObject,"Feature->SetAttributeObject (String, Feature): VoidType"
+Feature,SetAttributeReal,"Feature->SetAttributeReal (String, Real): Voidlype"
+Feature,SetAttributeString,"Feature->SetAttributeString (String, String): VoidType"
+Feature,Update,Feature->Update (): VoidType
+GeneralPanel,SetColor,"Other->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+GeometricFeature,GetNearSubElements,"GetNearSubElements (dimension: Integer, geoFeature: Geometric feature): List"
+GeometricFeature,GetSubElements,"GetSubElements (dimension: Integer, duplicates: Boolean): List"

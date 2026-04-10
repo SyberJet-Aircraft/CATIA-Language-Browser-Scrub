@@ -5,13 +5,13 @@ from PIL import Image, ImageDraw
 import mss
 
 # Paste your values from the pyautogui script here
-tip_left   = 3300  # replace with your x1
-tip_top    = 1870   # replace with your y1
-tip_width  = 470   # replace with x2-x1
-tip_height = 120    # replace with y2-y1
+tip_left   = 1112  # replace with your x1
+tip_top    = 870   # replace with your y1
+tip_width  = 772   # replace with x2-x1
+tip_height = 110    # replace with y2-y1
 
 with mss.mss() as sct:
-    mon = sct.monitors[3]  # CATIA monitor
+    mon = sct.monitors[1]  # CATIA monitor
     shot = sct.grab(mon)
     full = Image.frombytes("RGB", shot.size, shot.rgb)
 
@@ -26,5 +26,5 @@ draw.rectangle([
     tip_top    - monitor_top  + tip_height,
 ], outline="red", width=4)
 
-full.save(r"C:\Users\AdamPetrillo\Desktop\ocr_region_debug.png")
+full.save(r"C:\Users\infodba\Desktop\ocr_region_debug.png")
 print("Saved!")

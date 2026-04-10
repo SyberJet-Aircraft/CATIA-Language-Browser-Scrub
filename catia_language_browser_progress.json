@@ -1,0 +1,1525 @@
+{
+  "completed_types": {
+    "2DArc": [],
+    "2DAxis_HDirection": [],
+    "2DAxis_Origin": [],
+    "2DAxis_VDirection": [],
+    "2DCircle": [],
+    "2DClothoidCurve": [],
+    "2DConcatenatedCurve": [],
+    "2DConicCurve": [],
+    "2DConnectCurve": [],
+    "2DCstPoint": [],
+    "2DCstPoint_Tangent": [],
+    "2DCurve": [],
+    "2DCurveEquation": [],
+    "2DDatum": [],
+    "2DEllipse": [],
+    "2DFixTogether": [],
+    "2DFrozenSpline": [],
+    "2DGeometry": [],
+    "2DHyperbola": [],
+    "2DLine": [],
+    "2DOffsetCurve": [],
+    "2DOutput": [],
+    "2DOutputAxis": [],
+    "2DOutputPlane": [],
+    "2DOutputProfile": [],
+    "2DParabola": [],
+    "2DPoint": [
+      {
+        "object_type": "2DPoint",
+        "function_name": "point2dto3d",
+        "signature": "point2dto3d (2DPoint: Point): Point"
+      }
+    ],
+    "2DPointOnCurve": [],
+    "2DPolyline": [],
+    "2DSplineCurve": [],
+    "2DUnspec": [],
+    "3DTag": [],
+    "ABSOLUTEVISCOSITY": [],
+    "ABSORBANCE": [],
+    "ABSORBANCE_RATE": [],
+    "ABSORBEDDOSE": [],
+    "ABSORBEDDOSERATE": [],
+    "ACCELERATION_OVER_FORCE": [],
+    "ACCELERATION_OVER_MOMENT": [],
+    "ACCELERATION_OVER_PRESSURE": [],
+    "ACCELERATION_OVER_VOLTAGE": [],
+    "ACCELERATION_OVER_VOLUME_ACCELERATION": [],
+    "ACCELERATION_OVER_VOLUME_VELOCITY": [],
+    "ACCELERATIONXFORCE": [],
+    "ACCELERATIONXPRESSURE": [],
+    "ACCELERATIONXVOLUME_ACCELERATION": [],
+    "ACCELRTN": [],
+    "AccessoryChange": [],
+    "ACOUSTIC_DIPOLE_AMPLITUDE": [],
+    "ACOUSTIC_INTENSITY": [],
+    "ACOUSTIC_MONOPOLE_AMPLITUDE": [],
+    "ACOUSTIC_POWER": [],
+    "ACOUSTIC_QUADRUPOLE_AMPLITUDE": [],
+    "ACOUSTICIMPEDANCE": [],
+    "ActivityStateEnum": [],
+    "Add": [],
+    "AdvisorAction": [
+      {
+        "object_type": "AdvisorAction",
+        "function_name": "Run",
+        "signature": "Action->Run (valueOrFeature: ObjectType, ...): VoidType"
+      }
+    ],
+    "AdvisorCheck": [],
+    "AdvisorConnection": [],
+    "AdvisorEquivalentDimensions": [],
+    "AdvisorFeature": [],
+    "AdvisorFormula": [],
+    "AdvisorLaw": [],
+    "AdvisorMacrosSet": [],
+    "AdvisorParameterSet": [],
+    "AdvisorReaction": [],
+    "AdvisorRelation": [],
+    "AdvisorRelationSet": [],
+    "AdvisorRootRelation": [],
+    "AdvisorRule": [],
+    "AdvisorSetOfEquations": [],
+    "AdvStatusSemanticAnnotation": [],
+    "AERATIONRATE": [],
+    "AFFINITY": [],
+    "AnalysisEntity": [],
+    "AnalysisExternalRef": [],
+    "AnalysisGroup": [],
+    "AnalysisLoad": [],
+    "AnalysisMass": [],
+    "AnalysisProperty": [],
+    "AnalysisRestraint": [],
+    "AnalysisSet": [],
+    "AnalysisSolution": [
+      {
+        "object_type": "AnalysisSolution",
+        "function_name": "bucklingfactors",
+        "signature": "bucklingfactors (Case: Analysis Results): List"
+      },
+      {
+        "object_type": "AnalysisSolution",
+        "function_name": "dispmax",
+        "signature": "dispmax (Case: Analysis Results): Length"
+      },
+      {
+        "object_type": "AnalysisSolution",
+        "function_name": "dispmaxongroup",
+        "signature": "dispmaxongroup (Case: Analysis Results, Group: Group): Length"
+      },
+      {
+        "object_type": "AnalysisSolution",
+        "function_name": "energy",
+        "signature": "energy (Case: Analysis Results): Energy"
+      },
+      {
+        "object_type": "AnalysisSolution",
+        "function_name": "frequencies",
+        "signature": "frequencies (Case: Analysis Results): List"
+      },
+      {
+        "object_type": "AnalysisSolution",
+        "function_name": "frequency",
+        "signature": "frequency (Case: Analysis Results, number Integer): Frequency"
+      },
+      {
+        "object_type": "AnalysisSolution",
+        "function_name": "globalerror",
+        "signature": "globalerror (Case: Analysis Results): Real"
+      },
+      {
+        "object_type": "AnalysisSolution",
+        "function_name": "misesmax",
+        "signature": "misesmax (Case: Analysis Results): Pressure"
+      }
+    ],
+    "ANGACCELRTN": [],
+    "ANGLE": [],
+    "ANGULAR_VELOCITY": [],
+    "ANGULARCROSSSECTION": [],
+    "ANGULARFEEDRATE": [],
+    "ANGULARJERK": [],
+    "ANGULARMOMENTUM": [],
+    "ANGULARMOMENTUMFLUX": [],
+    "ANGULARSPINDLESPEED": [],
+    "AnnIndicatorEdge": [],
+    "APPARENTPOWER": [],
+    "APTImport": [],
+    "ARC_LENGTH": [],
+    "AREA": [],
+    "ArrangementArea": [],
+    "ArrangementBoundary": [],
+    "ArrangementItemReservation": [],
+    "ArrangementPathway": [
+      {
+        "object_type": "ArrangementPathway",
+        "function_name": "FindSmallestBendRadius",
+        "signature": "FindSmallestBendRadius (): Real"
+      }
+    ],
+    "ArrangementRun": [],
+    "ArrangementSpatialLoft": [
+      {
+        "object_type": "ArrangementSpatialLoft",
+        "function_name": "FindSmallestBendRadius",
+        "signature": "Loft->FindSmallestBendRadius (): Real"
+      }
+    ],
+    "ArrRun": [
+      {
+        "object_type": "ArrRun",
+        "function_name": "CheckBendablesForMaxBendRadius",
+        "signature": "AnRun->CheckBendablesForMaxBendRadius (MaxBendRadius: Length): Boolean"
+      },
+      {
+        "object_type": "ArrRun",
+        "function_name": "CheckBendablesForMaxTotalRawLength",
+        "signature": "AnRun->CheckBendablesForMaxTotalRawLength (MaxRawLength: Length): Boolean"
+      },
+      {
+        "object_type": "ArrRun",
+        "function_name": "CheckBendablesForMinGripLength",
+        "signature": "ArrRun->CheckBendablesForMinGripLength (MinGripLength: Length): Boolean"
+      }
+    ],
+    "Assemble": [],
+    "Assembly": [],
+    "AssemblyStation": [],
+    "ATOMICATTENUATIONCOEFFICIENT": [],
+    "ATTENUATIONCOEFFICIENT": [],
+    "AutoDraft": [],
+    "AutoFillet": [],
+    "AuxiliaryOperation": [],
+    "AxialDeltaDepthMode_DefDiaInc": [],
+    "AxialDeltaDepthMode_DefInc": [],
+    "AxialDeltaDepthMode_DefTip": [],
+    "AxialDeltaDepthMode_TipInc": [],
+    "AxialDepthMode_DiaDis": [],
+    "AxialDepthMode_DiaDisBre": [],
+    "AxialDepthMode_DisBre": [],
+    "AxialDepthMode_Tip": [],
+    "AxialDepthMode_TipBre": [],
+    "AxialDepthMode_TipDia": [],
+    "AxialDepthMode_TipDis": [],
+    "AxialDepthMode_TipDisBre": [],
+    "AxialDepthMode_TipSho": [],
+    "AxialDwellMode_DefRouTim": [],
+    "AxialHelixMode_AngPit": [],
+    "AxialLiftMode_NoDisPol": [],
+    "AxialMachiningOperation": [],
+    "AxialPlungeMode_DefTip": [],
+    "AxialPlungeMode_DefTipDia": [],
+    "AxialPlungeMode_Tip": [],
+    "AxialSpotDepthMode_DefDiaDis": [],
+    "AxialSpotDepthMode_DefDis": [],
+    "AxialSpotDepthMode_DefTip": [],
+    "AxialSpotDepthMode_DefTipDia": [],
+    "AxialSpotDepthMode_TipDia": [],
+    "AxisSystem": [
+      {
+        "object_type": "AxisSystem",
+        "function_name": "AxisSystemSetCurrent",
+        "signature": "System->AxisSystemSetCurrent (input2: Boolean): VoidType"
+      },
+      {
+        "object_type": "AxisSystem",
+        "function_name": "GetRefAxisSystem",
+        "signature": "System->GetRefAxisSystem (refAxis: out Feature, isRefSet: out Boolean, isNew: out Boolean): VoidType"
+      },
+      {
+        "object_type": "AxisSystem",
+        "function_name": "IsAxisSystemActive",
+        "signature": "System-> IsAxisSystemActive (isAxisSystemActive: out Boolean): VoidType"
+      }
+    ],
+    "BackBoring": [],
+    "BackShell": [],
+    "BANDWIDTH": [],
+    "Beam": [
+      {
+        "object_type": "Beam",
+        "function_name": "SetColor",
+        "signature": "Beam->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+      }
+    ],
+    "Bend": [],
+    "BendCreator": [],
+    "BendingWizard": [],
+    "BfmCurveBead": [],
+    "BfmJoint": [],
+    "BfmJointBody": [],
+    "BfmJointElement": [],
+    "BfmMngr": [],
+    "BfmSpot": [
+      {
+        "object_type": "BfmSpot",
+        "function_name": "distance",
+        "signature": "distance (BiW Spot, BiW Spot): Length"
+      },
+      {
+        "object_type": "BfmSpot",
+        "function_name": "LengthOnCurve",
+        "signature": "LengthOnCurve (BiW Spot, BiW Spot): Length"
+      }
+    ],
+    "BfmSpotPoint": [],
+    "BfmSpotProjection": [],
+    "BIOLOGICAL_ACTIVITY": [],
+    "BIOLOGICAL_ACTIVITY_PER_MASS": [],
+    "BIOLOGICAL_ACTIVITY_PER_VOLUME": [],
+    "BIWBead": [],
+    "BIWHole": [],
+    "BIWHoleCurve": [],
+    "BIWRidgeReference": [],
+    "Body": [
+      {
+        "object_type": "Body",
+        "function_name": "centerofgravity",
+        "signature": "centerofgravity (Body, ...): Point"
+      },
+      {
+        "object_type": "Body",
+        "function_name": "disassemble",
+        "signature": "disassemble (Input: Body, CellsMode: Boolean): List"
+      },
+      {
+        "object_type": "Body",
+        "function_name": "distance",
+        "signature": "distance (Body, Body): Length"
+      },
+      {
+        "object_type": "Body",
+        "function_name": "distancedir",
+        "signature": "distancedir (Body, Body, Direction): Length"
+      },
+      {
+        "object_type": "Body",
+        "function_name": "IsInfinite",
+        "signature": "IsInfinite (isinfinite: out Boolean): VoidType"
+      },
+      {
+        "object_type": "Body",
+        "function_name": "nbDomains",
+        "signature": "nbDomains (Body): Integer"
+      }
+    ],
+    "BodyFeature": [],
+    "BOHRMAGNETON": [],
+    "Boolean": [],
+    "Boring": [],
+    "BoringAndChamfering": [],
+    "BoringSpindleStop": [],
+    "BottomType": [],
+    "Brace": [
+      {
+        "object_type": "Brace",
+        "function_name": "SetColor",
+        "signature": "Brace->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+      }
+    ],
+    "Branchable": [],
+    "Bundle": [],
+    "BundlePositionPoint": [],
+    "BundleSegment": [],
+    "BundleSegmentExtremity": [],
+    "CamAccessPart": [],
+    "CamClosure": [],
+    "CamDoor": [],
+    "CameraType": [],
+    "CamHandGrab": [],
+    "CamHatch": [],
+    "CamInclinedLadder": [],
+    "CamLadder": [],
+    "CamLadderRung": [],
+    "CamScuttle": [],
+    "CamVerticalLadder": [],
+    "CamWallSystem": [],
+    "CamWindow": [],
+    "CAPACITANCE": [],
+    "CATAjnTypeJoint": [],
+    "CATAjnTypeJointBody": [],
+    "CATAwmTypeWeld": [],
+    "CATCell": [
+      {
+        "object_type": "CATCell",
+        "function_name": "extract",
+        "signature": "extract (cell: CATCell, propagationType (0: GO; 1: G1; 2: G2; other or no value: no propagation): Integer"
+      }
+    ],
+    "CATCompCore": [],
+    "CATCompCutPiece": [],
+    "CATCompPliesGroup": [],
+    "CATCompPly": [],
+    "CATCptAuxElectricalRm": [],
+    "CATCptAuxMachineryRm": [],
+    "CATCptBerthRoom": [],
+    "CATCptBoundary": [],
+    "CATCptCompartment": [],
+    "CATCptDeckBoundary": [],
+    "CATCptEngineRoom": [],
+    "CATCptInternalCompartment": [],
+    "CATCptKitchen": [],
+    "CATCptLaundryRoom": [],
+    "CATCptMainElectricRm": [],
+    "CATCptMainMachineryRm": [],
+    "CATCptOverheadBndry": [],
+    "CATCptStdBoundary": [],
+    "CATCptStdCompartment": [],
+    "CATCptTankRm": [],
+    "CATCptWallBoundary": [],
+    "CATEarlyGenItem": [],
+    "CATEarlyGenShape": [],
+    "CATEdge": [
+      {
+        "object_type": "CATEdge",
+        "function_name": "length",
+        "signature": "length (CATEdge): Length"
+      }
+    ],
+    "CATEleWireCtr": [],
+    "CATEqtAssembly": [],
+    "CATEqtCMM": [],
+    "CATEqtInspection": [],
+    "CATEqtLaserTracker": [],
+    "CATEqtManualArm": [],
+    "CATEqtProbe": [],
+    "CATEqtProbeAdaptor": [],
+    "CATEqtProbeExtension": [],
+    "CATEqtProbeHead": [],
+    "CATEqtResource": [],
+    "CATEqtResourceTool": [],
+    "CATEqtRotaryTable": [],
+    "CATEqtStylusAdaptor": [],
+    "CATEqtStylusCenter": [],
+    "CATEqtStylusExtension": [],
+    "CATEqtStylusTip": [],
+    "CATEqtToolAssembly": [],
+    "CATEqtToolRack": [],
+    "CATFace": [
+      {
+        "object_type": "CATFace",
+        "function_name": "area",
+        "signature": "area (CATFace): Area"
+      }
+    ],
+    "CATFTAElement": [],
+    "CATHgrAssembly": [],
+    "CATOptLocalWPrioritiesAlgorithmCATIType": [],
+    "CATSfmBeamExt": [],
+    "CATSfmBlockSystemExt": [
+      {
+        "object_type": "CATSfmBlockSystemExt",
+        "function_name": "SetColor",
+        "signature": "Set->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+      }
+    ],
+    "CATSfmOpeningExt": [
+      {
+        "object_type": "CATSfmOpeningExt",
+        "function_name": "SetColor",
+        "signature": "SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+      }
+    ],
+    "CATSfmPanelExt": [
+      {
+        "object_type": "CATSfmPanelExt",
+        "function_name": "SetColor",
+        "signature": "Plate->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+      }
+    ],
+    "CATSfmSBlockExt": [
+      {
+        "object_type": "CATSfmSBlockExt",
+        "function_name": "SetColor",
+        "signature": "Volume->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+      }
+    ],
+    "CATSfmStiffenerExt": [],
+    "CATSfmStiffenerOnFreeEdgeExt": [
+      {
+        "object_type": "CATSfmStiffenerOnFreeEdgeExt",
+        "function_name": "SetColor",
+        "signature": "Edge->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+      }
+    ],
+    "CATSHM_CircPattern": [],
+    "CATSHM_Mirror": [],
+    "CATSHM_RectPattern": [],
+    "CATSHM_UserPattern": [],
+    "CATSm_AxisToAxis": [],
+    "CATSm_BeadPunch": [],
+    "CATSm_BridgePunch": [],
+    "CATSm_CornerRelief": [],
+    "CATSm_CurvePunch": [],
+    "CATSm_DowelPunch": [],
+    "CATSm_ExtendedExtrudedHolePunch": [],
+    "CATSm_ExtrudedHolePunch": [],
+    "CATSm_Flange": [],
+    "CATSm_FlatBend": [],
+    "CATSm_Hole3D": [],
+    "CATSm_LouverPunch": [],
+    "CATSm_PointPunch": [],
+    "CATSm_Rotate": [],
+    "CATSm_Stamp": [],
+    "CATSm_StiffeningRibPunch": [],
+    "CATSm_SurfacePunch": [],
+    "CATSm_Symmetry": [],
+    "CATSm_Translate": [],
+    "CATSm_UserPunch": [],
+    "CATSmChamfer": [],
+    "CATSmClosedCorner": [],
+    "CATSmCorner": [],
+    "CATSmCutOut": [],
+    "CATSmFreeFormSurface": [],
+    "CATSmHopper": [],
+    "CATSmJog": [],
+    "CATTPSAllAnnotations": [],
+    "CATTPSBasicDim": [
+      {
+        "object_type": "CATTPSBasicDim",
+        "function_name": "GetRepresentationStrings",
+        "signature": "dimension->GetRepresentationStrings (ListOfRepStringsValueOutput: out List): Boolean"
+      }
+    ],
+    "CATTPSCapture": [],
+    "CATTPSConstructedGeometry": [],
+    "CATTPSCoordDim": [
+      {
+        "object_type": "CATTPSCoordDim",
+        "function_name": "GetRepresentationStrings",
+        "signature": "GetRepresentationStrings (ListOfRepStringsValueQutput: out List): Boolean"
+      }
+    ],
+    "CATTPSExtractionView": [],
+    "CATTPSFlagNote": [
+      {
+        "object_type": "CATTPSFlagNote",
+        "function_name": "GetRepresentationStrings",
+        "signature": "Note->GetRepresentationStrings (ListOfRepStringsValueOutput: out List): Boolean"
+      }
+    ],
+    "CATTPSNoa": [
+      {
+        "object_type": "CATTPSNoa",
+        "function_name": "GetRepresentationStrings",
+        "signature": "GetRepresentationStrings (ListOfRepStringsValueOutput: out List): Boolean"
+      }
+    ],
+    "CATTPSNonSemantic": [],
+    "CATTPSReferenceFrame": [
+      {
+        "object_type": "CATTPSReferenceFrame",
+        "function_name": "GetRepresentationStrings",
+        "signature": "Frame->GetRepresentationStrings (ListOfRepStringsValueOutput: out List): Boolean"
+      }
+    ],
+    "CATTPSRestrictedArea": [],
+    "CATTPSRoughness": [
+      {
+        "object_type": "CATTPSRoughness",
+        "function_name": "GetRepresentationStrings",
+        "signature": "texture->GetRepresentationStrings (ListOfRepStringsValueOutput: out List): Boolean"
+      }
+    ],
+    "CATTPSSemantic": [],
+    "CATTPSSet": [],
+    "CATTPSText": [],
+    "CATTPSUndefinedEdgeSymbol": [],
+    "CATTPSView": [
+      {
+        "object_type": "CATTPSView",
+        "function_name": "AddPlaneAssociativity",
+        "signature": "Plane->AddPlaneAssociativity (SupportPln: Plane): Integer"
+      }
+    ],
+    "CATTPSWeld": [
+      {
+        "object_type": "CATTPSWeld",
+        "function_name": "GetRepresentationStrings",
+        "signature": "Weld->GetRepresentationStrings (ListOfRepStringsValueOutput: out List): Boolean"
+      }
+    ],
+    "CATTubAssembly": [],
+    "CATVertex": [],
+    "CATVolume": [],
+    "Cavity": [],
+    "Chamfer": [],
+    "Chamfering2Sides": [],
+    "CheckSeverity": [],
+    "CHEMICALPOTENTIAL": [],
+    "Circle": [
+      {
+        "object_type": "Circle",
+        "function_name": "center",
+        "signature": "center (Circle): Point"
+      }
+    ],
+    "CircleRelimitation": [],
+    "CircleType": [],
+    "CircPattern": [],
+    "CircularCutout": [],
+    "CircularMilling": [],
+    "CIRCULARWAVENUMBER": [],
+    "CloseSurface": [],
+    "CndBendableConduit": [],
+    "CndBranchCross": [],
+    "CndBranchTee": [],
+    "CndConduit": [],
+    "CndConduitBranch": [],
+    "CndConduitElbow": [],
+    "CndConduitFitting": [],
+    "CndConduitPart": [],
+    "CndCoupling": [],
+    "CndFlexibleConduit": [],
+    "CndNipple": [],
+    "CndOffset": [],
+    "CndStraightConduit": [],
+    "Column": [
+      {
+        "object_type": "Column",
+        "function_name": "SetColor",
+        "signature": "Column->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+      }
+    ],
+    "COLUMN_VOLUME": [],
+    "COLUMN_VOLUME_RATE": [],
+    "CommandSignal": [],
+    "CompParametersFeature": [],
+    "COMPRESSIBILITY": [],
+    "CONCENTRATED_ION_CONCENTRATION_FLUX": [],
+    "CONCENTRATION": [],
+    "CONDUCTANCE": [],
+    "ConduitLine": [],
+    "ConicBend": [],
+    "ConnectorShell": [],
+    "ConstantEdgeFillet": [],
+    "Contact": [],
+    "ContactPoint": [],
+    "CONTACTRESISTIVITY": [],
+    "CONVECTIVE_FILM_COEFFICIENT": [],
+    "CoordinateSystem": [],
+    "Core": [],
+    "CoreSample": [],
+    "CornerRelief": [],
+    "CorrugatedTube": [],
+    "CounterboredHole": [],
+    "CounterBoring": [],
+    "CounterdrilledHole": [],
+    "CounterSinking": [],
+    "CountersunkHole": [],
+    "COURANT": [],
+    "CstAttr_Dimension": [],
+    "CstAttr_DimensionAxis": [],
+    "CstAttr_Direction": [],
+    "CstAttr_FsContinuity": [],
+    "CstAttr_FsModifiedElement": [],
+    "CstAttr_FsType": [],
+    "CstAttr_Mode": [],
+    "CstAttr_Orientation": [],
+    "CstAttr_Parallelism": [],
+    "CstAttr_RefAxis": [],
+    "CstAttr_Reference": [],
+    "CstAttr_Side": [],
+    "CUMULATIVE_MOMENT": [],
+    "CURRENT_DENSITY": [],
+    "CURRENTDENSITYOFPARTICLES": [],
+    "CURRENTSLOPE": [],
+    "CURVATURE": [],
+    "Curve": [
+      {
+        "object_type": "Curve",
+        "function_name": "area",
+        "signature": "area (Curve, ...): Area"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "assemble",
+        "signature": "assemble (Curve, ...): Curve"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "axis",
+        "signature": "axis (curve: Curve): Line"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "binormal",
+        "signature": "binormal (crv: Curve, pt: Point): Line"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "conicsweep2GuideCurves",
+        "signature": "conicsweep2GuideCurves (crv1: Curve, crvitangency: Surface, crv2: Curve, crv2tangency: Surface, spine: Curve): Surface"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "conicsweep3GuideCurves",
+        "signature": "conicsweep3GuideCurves (crv1: Curve, crv tangency: Surface, crv2: Curve, crv3: Curve, crv3tangency: Surface, spine: Curve): Surface"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "conicsweep4GuideCurves",
+        "signature": "conicsweep4GuideCurves (crv1: Curve, crv 1tangency: Surface, crv2: Curve, crv3: Curve, crv4: Curve, spine: Curve): Surface"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "conicsweep5GuideCurves",
+        "signature": "conicsweep5GuideCurves (crv1: Curve, crv2: Curve, crv3: Curve, crv4: Curve, crv5: Curve, spine: Curve): Surface"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "curvature",
+        "signature": "curvature (crv: Curve, pt: Point): Real"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "curvaturecenter",
+        "signature": "curvaturecenter (crv: Curve, pt: Point): Point"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "curveparallel",
+        "signature": "curveparallel (crv: Curve, sur: Surface, offset: Length, OptionalRoundMode: Boolean): Curve"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "extremum",
+        "signature": "extremum (Curve, Direction, Boolean, Direction, Boolean, Direction, Boolean): Point"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "extrude",
+        "signature": "extrude (Curve, Direction, length1: Length, length2: Length, orientation: Boolean): Surface"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "far",
+        "signature": "far (crv: Curve, far: Wireframe): Curve"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "fill",
+        "signature": "fill (Curve, ...): Surface"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "intersect",
+        "signature": "intersect (Curve, Surface): Point"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "length",
+        "signature": "length (Curve, ...): Length"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "lineangle",
+        "signature": "lineangle (crv: Curve, sur: Surface, pt: Point, geodesic: Boolean, start: Length, end: Length, angle: Angle, orientation: Boolean): Line"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "linetangent",
+        "signature": "linetangent (crv: Curve, pt: Point, start: Length, end: Length, orientation: Boolean): Line"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "mainnormal",
+        "signature": "mainnormal (crv: Curve, pt: Point): Line"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "minimumCurvatureRadius",
+        "signature": "minimumCurvatureRadius (Curve): Length"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "near",
+        "signature": "near (crv: Curve, near: Wireframe): Curve"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "plane",
+        "signature": "plane (Curve): Plane"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "planenormal",
+        "signature": "planenormal (Curve, Point): Plane"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "pointoncurve",
+        "signature": "pointoncurve (crv: Curve, pt: Point, distance: Length, orientation: Boolean): Point"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "pointoncurveRatio",
+        "signature": "pointoncurveRatio (crv: Curve, pt: Point, ratio: Real, orientation: Boolean): Point"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "pointtangent",
+        "signature": "pointtangent (Curve, Direction): Point"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "project",
+        "signature": "project (toproject: Curve, support: Surface, OptionalDir: Direction): Curve"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "revolve",
+        "signature": "revolve (Curve, axis: Line, angle1: Angle, angle2: Angle): Surface"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "split",
+        "signature": "split (tosplit: Curve, splitting: Wireframe, orientation: Boolean): Curve"
+      },
+      {
+        "object_type": "Curve",
+        "function_name": "trim",
+        "signature": "trim (crv1: Curve, orientationCrv1: Boolean, crv2: Curve, orientationCrv2: Boolean): Curve"
+      }
+    ],
+    "CurveMappingFromFDToFP": [],
+    "CurveMappingFromFPToFD": [],
+    "CutoutType": [],
+    "DAMPINGCOEFFICIENT": [],
+    "DECAYCONSTANT": [],
+    "DeckLongStiffener": [
+      {
+        "object_type": "DeckLongStiffener",
+        "function_name": "SetColor",
+        "signature": "Stiffener->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+      }
+    ],
+    "DeckPanel": [
+      {
+        "object_type": "DeckPanel",
+        "function_name": "SetColor",
+        "signature": "Deck->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+      }
+    ],
+    "DeckStiffener": [],
+    "DeckTransStiffener": [],
+    "DefinePenetrationCutoutShape": [],
+    "DENSITY": [],
+    "DENSITY_ANGULAR_SPEED": [],
+    "DENSITY_SQUARE_ANGULAR_SPEED": [],
+    "DENSITYOFHEATFLOWRATE": [],
+    "DENSITYOFSTATES": [],
+    "DERDENSITYBYENTHALPY": [],
+    "DERDENSITYBYPRESSURE": [],
+    "DERDENSITYBYTEMPERATURE": [],
+    "DERENERGYBYDENSITY": [],
+    "DERENERGYBYPRESSURE": [],
+    "DERENTHALPYBYPRESSURE": [],
+    "DesignTableType": [],
+    "DIMENSIONLESS": [],
+    "DimensionType": [],
+    "Direction": [
+      {
+        "object_type": "Direction",
+        "function_name": "angle",
+        "signature": "angle (Direction, Direction): Angle"
+      },
+      {
+        "object_type": "Direction",
+        "function_name": "angleoriented",
+        "signature": "angleoriented (Direction, Direction, Direction): Angle"
+      }
+    ],
+    "DISPLACEMENT": [],
+    "DISPLACEMENT_OVER_FORCE": [],
+    "DISPLACEMENT_OVER_MOMENT": [],
+    "DISPLACEMENT_OVER_PRESSURE": [],
+    "DISPLACEMENT_OVER_VOLTAGE": [],
+    "DISPLACEMENT_OVER_VOLUME_ACCELERATION": [],
+    "DISPLACEMENT_OVER_VOLUME_VELOCITY": [],
+    "DISPLACEMENTXFORCE_OVER_FREQUENCY": [],
+    "DISPLACEMENTXVOLUME_ACCELERATION": [],
+    "DISPLACEMENTXVOLUME_VELOCITY": [],
+    "DISTRIBUTED_ION_CONCENTRATION_BODY_FLUX": [],
+    "DISTRIBUTED_ION_CONCENTRATION_SURFACE_FLUX": [],
+    "DMUAnnot3DType": [],
+    "DMUAnnotViewsType": [],
+    "DMUDistanceType": [],
+    "DMUExperimentType": [],
+    "DMUGroupType": [],
+    "DMUHyperLinkType": [],
+    "DMUInterferenceType": [],
+    "DMUMeasureType": [],
+    "DMUPresentationType": [],
+    "DMUReplayType": [],
+    "DMUReviewType": [],
+    "DMUSceneType": [],
+    "DMUSectionType": [],
+    "DMUSequenceType": [],
+    "DMUShuttleType": [],
+    "DMUSIMColorActionType": [],
+    "DMUSimulationType": [],
+    "DMUTrackType": [],
+    "DMUVisibilityActionType": [],
+    "DNBStateType": [],
+    "Document": [],
+    "DocumentTemplate": [],
+    "DOSEEQUIVALENT": [],
+    "DPMActivity": [],
+    "Draft": [],
+    "Drilling": [],
+    "DrillingBreakChips": [],
+    "DrillingDeepHole": [],
+    "DrillingDwellDelay": [],
+    "DrillingRivetingOperation": [],
+    "DrwAnnBroken": [],
+    "DrwAreaFill": [],
+    "DrwArrow": [],
+    "DrwAxisLine": [],
+    "DrwBalloon": [],
+    "DrwCallout": [],
+    "DrwCenterLine": [],
+    "DrwCoordDimension": [],
+    "DrwDatumFeature": [],
+    "DrwDatumTarget": [],
+    "DrwDetail": [],
+    "DrwDimension": [],
+    "DrwDimSystem": [],
+    "DrwDitto": [],
+    "DrwGDT": [],
+    "DrwObject": [],
+    "DrwPicture": [],
+    "DrwRough": [],
+    "DrwSheet": [],
+    "DrwTable": [],
+    "DrwText": [],
+    "DrwThread": [],
+    "DrwView": [],
+    "DrwWelding": [],
+    "DTLotusSheetType": [],
+    "DTModelSheetType": [],
+    "DTSheetType": [
+      {
+        "object_type": "DTSheetType",
+        "function_name": "CellAsBoolean",
+        "signature": "Sheet->CellAsBoolean (rowlndex: Integer, columnindex: Integer): Boolean"
+      },
+      {
+        "object_type": "DTSheetType",
+        "function_name": "CellAsReal",
+        "signature": "Sheet->CellAsReal (rowlndex: Integer, columnindex: Integer): Real"
+      },
+      {
+        "object_type": "DTSheetType",
+        "function_name": "CellAsString",
+        "signature": "CellAsString (rowlndex: Integer, columnindex: Integer): String"
+      },
+      {
+        "object_type": "DTSheetType",
+        "function_name": "CloserConfig",
+        "signature": "CloserConfig (columnName: String, sortType: String, minValue: Literal, ...): Integer"
+      },
+      {
+        "object_type": "DTSheetType",
+        "function_name": "CloserSupConfig",
+        "signature": "CloserSupConfig (columnName: String, minValue: Literal, ...): Integer"
+      },
+      {
+        "object_type": "DTSheetType",
+        "function_name": "CloserValueSupInColumn",
+        "signature": "Sheet->CloserValueSupInColumn (columnindex: Integer, value: Real): Real"
+      },
+      {
+        "object_type": "DTSheetType",
+        "function_name": "MaxInColumn",
+        "signature": "MaxInColumn (columnindex: Integer): Real"
+      },
+      {
+        "object_type": "DTSheetType",
+        "function_name": "MinInColumn",
+        "signature": "Sheet->MinInColumn (columnindex: Integer): Real"
+      },
+      {
+        "object_type": "DTSheetType",
+        "function_name": "SetCell",
+        "signature": "SetCell (indexRow: Integer, indexColumn: Integer, cellValue: Literal): VoidType"
+      }
+    ],
+    "DTTextSheetType": [],
+    "DYNAMICVISCOSITY": [],
+    "Elec1PACBrCapFunc": [],
+    "Elec1PACCapacitorFunc": [],
+    "Elec1PACCirctBrkrFunc": [],
+    "Elec1PACEquipFunction": [],
+    "Elec1PACFuseFunc": [],
+    "Elec1PACGeneratorFunc": [],
+    "Elec1PACMotorFunc": [],
+    "Elec1PACPowerFunc": [],
+    "Elec1PACReactorFunc": [],
+    "Elec1PACSwitchFunc": [],
+    "Elec1PACTransfmrFunc": [],
+    "Elec3PACAutoTranFunc": [],
+    "Elec3PACBrCapFunc": [],
+    "Elec3PACCapacitorFunc": [],
+    "Elec3PACCirctBrkrFunc": [],
+    "Elec3PACDupReactrFunc": [],
+    "Elec3PACEquipFunction": [],
+    "Elec3PACFuseFunc": [],
+    "Elec3PACGeneratorFunc": [],
+    "Elec3PACLoadFunc": [],
+    "Elec3PACMotorFunc": [],
+    "Elec3PACPowerFunc": [],
+    "Elec3PACReactorFunc": [],
+    "Elec3PACShiftTranFunc": [],
+    "Elec3PACSwitchFunc": [],
+    "Elec3PACSyncMotorFunc": [],
+    "Elec3PACTransfmrFunc": [],
+    "Elec3PACUPSFunc": [],
+    "Elec3PACWTransfmrFunc": [],
+    "Elec3PACZigZag": [],
+    "Elec3PRectifierFunc": [],
+    "ElecAdaptiveProtection": [],
+    "ElecAutoTransformer": [],
+    "ElecBackShellE": [],
+    "ElecBattery": [],
+    "ElecBppAttrE": [],
+    "ElecBranchable": [],
+    "ElecBundle": [],
+    "ElecBundleSegmentE": [],
+    "ElecCable": [
+      {
+        "object_type": "ElecCable",
+        "function_name": "CheckLengthByCableType",
+        "signature": "CheckLengthByCableType (CableType: String, MaxLength: Length): Boolean"
+      },
+      {
+        "object_type": "ElecCable",
+        "function_name": "CheckLengthSumByCableType",
+        "signature": "CheckLengthSumByCableType (CableType: String, MaxLength: Length): Boolean"
+      }
+    ],
+    "ElecCapacitor": [],
+    "ElecCavity": [],
+    "ElecCircuitBreaker": [],
+    "ElecCircuitBrkrFunc": [],
+    "ElecCommandSignal": [],
+    "ElecCommunicatnCable": [],
+    "ElecComponents": [],
+    "ElecConShellE": [],
+    "ElecContactE": [],
+    "ElecContinuityFunc": [],
+    "ElecControlPanel": [],
+    "ElecCorrugatedProtection": [],
+    "ElecCorrugateTubeE": [],
+    "ElecDCBatteryFunc": [],
+    "ElecDCCirctBrkrFunc": [],
+    "ElecDCEquipFunction": [],
+    "ElecDCFuseFunc": [],
+    "ElecDCGeneratorFunc": [],
+    "ElecDCLoadFunc": [],
+    "ElecDCMotorFunc": [],
+    "ElecDCSwitchFunc": [],
+    "ElecDeckLighting": [],
+    "ElecDuplexReactor": [],
+    "ElecEnclosedSwitch": [],
+    "ElecEqtPartE": [],
+    "ElecEquipment": [],
+    "ElecEquipmentFunction": [
+      {
+        "object_type": "ElecEquipmentFunction",
+        "function_name": "CheckMaxNumberOfComponents",
+        "signature": "Function->CheckMaxNumberOfComponents (MaxNumberOfComponents: Integer): Boolean"
+      }
+    ],
+    "ElecExtSpliceE": [],
+    "ElecFillerPlugE": [],
+    "ElecFixedProtection": [],
+    "ElecFnctCntPt": [],
+    "ElecFnctCon": [],
+    "ElecFnctEqt": [],
+    "ElecFuse": [],
+    "ElecFuseFunction": [],
+    "ElecGenerator": [],
+    "ElecGenericContFunc": [],
+    "ElecGeoBundleE": [],
+    "ElecGroundSignal": [],
+    "ElecGroupSignal": [],
+    "ElecIntSpliceE": [],
+    "ElecJunctionBox": [],
+    "ElecJunctionBoxFunc": [],
+    "ElecLClassFuse": [],
+    "ElecLightingFunc": [],
+    "ElecLightings": [],
+    "ElecMicConE": [],
+    "ElecMiscEquipFunc": [],
+    "ElecMotor": [],
+    "ElecMountingEquipmentE": [],
+    "ElecMultipleSegmentsE": [],
+    "ElecOffSheet": [],
+    "ElecOverheadLighting": [],
+    "ElecPartFunction": [],
+    "ElecPlug": [],
+    "ElecPlugFunction": [],
+    "ElecPowerCable": [],
+    "ElecPowerPanel": [],
+    "ElecPowerSignal": [],
+    "ElecProtectionE": [],
+    "ElecReactor": [],
+    "ElecRectifier": [],
+    "ElecRockerSwitch": [],
+    "ElecShieldingSignal": [],
+    "ElecShiftingTransfmr": [],
+    "ElecSicConE": [],
+    "ElecSignal": [],
+    "ElecSignalRoute": [],
+    "ElecSocket": [],
+    "ElecSocketFunction": [],
+    "ElecSpecialLighting": [],
+    "ElecStudE": [],
+    "ElecSwitch": [],
+    "ElecSwitchFunction": [],
+    "ElecSwitchPanelFunc": [],
+    "ElecSynchronousMotor": [],
+    "ElecSystem": [],
+    "ElecTapeE": [],
+    "ElecTapeProtection": [],
+    "ElecTermBlockE": [],
+    "ElecTerminalBoard": [],
+    "ElecTerminalBoardFunc": [],
+    "ElecTermination": [],
+    "ElecTerminationCst": [],
+    "ElecTermStripE": [],
+    "ElecTransformer": [],
+    "ELECTRICAL_CONDUCTIVITY": [],
+    "ELECTRICALTORQUECONSTANT": [],
+    "ELECTRICCHARGE": [],
+    "ELECTRICDIPOLEMOMENT": [],
+    "ELECTRICFIELDSTRENGTH": [],
+    "ELECTRICFLUXDENSITY": [],
+    "ELECTRICPOLARIZABILITYOFAMOLECULE": [],
+    "ELECTRICPOLARIZATION": [],
+    "ELECTRIZATION": [],
+    "ELECTROMAGNETICMOMENT": [],
+    "ElecVideoSignal": [],
+    "ElecWire": [],
+    "ENERGY": [],
+    "ENERGY_PER_AREA": [],
+    "ENERGY_RELEASE_RATE": [],
+    "ENERGYDENSITY": [],
+    "ENERGYFLUENCE": [],
+    "ENERGYMEC": [],
+    "ENTHALPY": [],
+    "ENTROPY": [],
+    "ENTROPY_SI": [],
+    "ENTROPYFLOWRATE": [],
+    "Enumere": [],
+    "ENZYME_ACTIVITY": [],
+    "EquipAirHandler": [],
+    "EquipAmplifier": [],
+    "EquipAmplifierFunc": [],
+    "EquipAntenna": [],
+    "EquipAntennaFunc": [],
+    "EquipAxialCompressor": [],
+    "EquipBlower": [],
+    "EquipBuffer": [],
+    "EquipCentriCompressor": [],
+    "EquipCentriPump": [],
+    "EquipChemReactorFunc_Sample": [],
+    "EquipCompressor": [],
+    "EquipCompressorFunc_Sample": [],
+    "EquipConveyor": [],
+    "EquipCoolerFunc_Sample": [],
+    "EquipDriver": [],
+    "EquipDriverFunc_Sample": [],
+    "EquipDryerFunc_Sample": [],
+    "EquipFan": [],
+    "EquipFanFunc_Sample": [],
+    "EquipFilterFunc_Sample": [],
+    "EquipFixture": [],
+    "EquipFunc": [],
+    "EquipFurnace": [],
+    "EquipFurnaceFunc_Sample": [],
+    "EquipGasDieselEngine": [],
+    "EquipGasTurbine": [],
+    "EquipHeaterFunc_Sample": [],
+    "EquipHeatExchanger": [],
+    "EquipHeatExchFunc_Sample": [],
+    "EquipHeatingCooling": [],
+    "EquipHVACNozzle": [],
+    "EquipHVACNozzleFunc": [],
+    "EquipMachine": [],
+    "EquipManway": [],
+    "EquipMaterialHandler": [],
+    "EquipMaterialHndlFunc_Sample": [],
+    "EquipMechanical": [],
+    "Equipment": [],
+    "EquipmentPart": [],
+    "EquipMiscellaneous": [],
+    "EquipMiscFunc_Sample": [],
+    "EquipMixer": [],
+    "EquipMixerFunc_Sample": [],
+    "EquipMixerSeparator": [],
+    "EquipNozzle": [],
+    "EquipNozzleFunc": [],
+    "EquipParticleChgFunc_Sample": [],
+    "EquipPipingNozzle": [],
+    "EquipPipingNozzleFunc": [
+      {
+        "object_type": "EquipPipingNozzleFunc",
+        "function_name": "IsNominalSizeConsistent",
+        "signature": "Function->IsNominalSizeConsistent (): Boolean"
+      },
+      {
+        "object_type": "EquipPipingNozzleFunc",
+        "function_name": "IsPipeSpecConsistent",
+        "signature": "Function->IsPipeSpecConsistent (): Boolean"
+      }
+    ],
+    "EquipProcess": [],
+    "EquipPump": [],
+    "EquipPumpFunc_Sample": [],
+    "EquipRadialCompressor": [],
+    "EquipReceiver": [],
+    "EquipReceiverFunc": [],
+    "EquipReciprCompressor": [],
+    "EquipReciprPump": [],
+    "EquipRobot": [],
+    "EquipRotaryCompressor": [],
+    "EquipRotaryPump": [],
+    "EquipSafety": [],
+    "EquipSeparatorFunc_Sample": [],
+    "EquipSink": [],
+    "EquipSource": [],
+    "EquipSteamCylinder": [],
+    "EquipSteamTurbine": [],
+    "EquipStorageFunc_Sample": [],
+    "EquipTool": [],
+    "EquipTowerFunc_Sample": [],
+    "EquipTransmitter": [],
+    "EquipTransmitterFunc": [],
+    "EquipTubingNozzle": [],
+    "EquipTubingNozzleFunc": [
+      {
+        "object_type": "EquipTubingNozzleFunc",
+        "function_name": "IsNominalSizeConsistent",
+        "signature": "IsNominalSizeConsistent (): Boolean"
+      },
+      {
+        "object_type": "EquipTubingNozzleFunc",
+        "function_name": "IsTubeSpecConsistent",
+        "signature": "Function->IsTubeSpecConsistent (): Boolean"
+      }
+    ],
+    "EquipUtility": [],
+    "EquipVessel": [],
+    "EquipVesselFunc_Sample": [],
+    "EquipWaveguideNozzle": [],
+    "EquipWvgNozzleFunc": [],
+    "EvolutiveExtrude": [],
+    "Exothermy": [],
+    "EXPOSURE": [],
+    "EXPOSURERATE": [],
+    "ExternalSplice": [],
+    "FaceFillet": [],
+    "FacePlate": [],
+    "Facing": [],
+    "FARADAYCONSTANT": [],
+    "Feature": [
+      {
+        "object_type": "Feature",
+        "function_name": "AbsoluteId",
+        "signature": "AbsoluteId (): String"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "Access",
+        "signature": "Feature->Access (Path: String, Type: String): UndefinedType"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "ActivateInactivateFeature",
+        "signature": "Feature->ActivateInactivateFeature (activate: Boolean): Voidlype"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "AddExtension",
+        "signature": "Feature->AddExtension (type: String): UndefinedType"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "AttributeType",
+        "signature": "Feature->AttributeType (AttributeName: String): String"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "Delete",
+        "signature": "Delete (): VoidType"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "EndModifyTemplate",
+        "signature": "EndModifyTemplate (template: Feature): VoidType"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "Find",
+        "signature": "Feature->Find (Type: String, Condition: String, Down: Boolean): UndefinedType"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "GetAttributeBoolean",
+        "signature": "GetAttributeBoolean (String): Boolean"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "GetAttributeInteger",
+        "signature": "Feature->GetAttributeInteger (String): Integer"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "GetAttributeObject",
+        "signature": "GetAttributeObject (String): UndefinedType"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "GetAttributeReal",
+        "signature": "GetAttributeReal (String): Real"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "GetAttributeString",
+        "signature": "GetAttributeString (String): String"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "GetPartFeature",
+        "signature": "GetPartFeature (iFeature: Feature): Part"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "HasAttribute",
+        "signature": "HasAttribute (String): Boolean"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "IsOwnedByString",
+        "signature": "IsOwnedByString (OwnerName: String): Boolean"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "IsSupporting",
+        "signature": "Feature->IsSupporting (typeName: String): Boolean"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "ListAttributeNames",
+        "signature": "Feature->ListAttributeNames (TypeFilter: String, DynamicOnly: Boolean): List"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "Query",
+        "signature": "Query (Type: String, Condition: String): List"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "SetAttributeBoolean",
+        "signature": "Feature->SetAttributeBoolean (String, Boolean): VoidType"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "SetAttributeDimension",
+        "signature": "Feature->SetAttributeDimension (String, Real, String): VoidType"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "SetAttributeInteger",
+        "signature": "Feature->SetAttributeInteger (String, Integer): VoidType"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "SetAttributeObject",
+        "signature": "Feature->SetAttributeObject (String, Feature): VoidType"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "SetAttributeReal",
+        "signature": "Feature->SetAttributeReal (String, Real): Voidlype"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "SetAttributeString",
+        "signature": "Feature->SetAttributeString (String, String): VoidType"
+      },
+      {
+        "object_type": "Feature",
+        "function_name": "Update",
+        "signature": "Feature->Update (): VoidType"
+      }
+    ],
+    "FERMIENERGY": [],
+    "FillerPlug": [],
+    "Fillet": [],
+    "Flange": [],
+    "FlangeAngleType": [],
+    "FlangeLengthType": [],
+    "FlangeTrimType": [],
+    "FlangeType": [],
+    "FlatBend": [],
+    "FLATNESS": [],
+    "FLOW_RESISTIVITY": [],
+    "FLUXIODQUANTUM": [],
+    "FORCE": [],
+    "FORCE_OVER_ACCELERATION": [],
+    "FORCE_OVER_DISPLACEMENT": [],
+    "FORCE_OVER_PRESSURE": [],
+    "FORCE_OVER_PULSATION": [],
+    "FORCE_OVER_ROTATION": [],
+    "FORCE_OVER_ROTATIONAL_ACCELERATION": [],
+    "FORCE_OVER_VELOCITY": [],
+    "FORCE_OVER_VOLUME_ACCELERATION": [],
+    "FORCE_OVER_VOLUME_VELOCITY": [],
+    "FORCE_PER_LENGTH": [],
+    "FREQUENCY": [],
+    "FREQUENCY_NOISE": [],
+    "FS3DCurve": [],
+    "FSAnalysis": [],
+    "FSCCKAnalysis": [],
+    "FSCntConstraint": [],
+    "FSCrvCCKAnalysis": [],
+    "FSCrvUntrim": [],
+    "FSCurveFillet": [],
+    "FSCutPlaneAnalysis": [],
+    "FSDistAnalysis": [],
+    "FSDraftAnalysis": [],
+    "FSFill": [],
+    "FSHighlightAnalysis": [],
+    "FSInflectAnalysis": [],
+    "FSIsoparamCurve": [],
+    "FSNet": [],
+    "FSPrpnCurvature": [],
+    "FSReflectAnalysis": [],
+    "FSSurfCurvAnalysis": [],
+    "FSSweep": [],
+    "FSUntrim": [],
+    "FUGACITY": [],
+    "FullDoeAlgorithm": [],
+    "FunctionalBody": [],
+    "FunctionalConnector": [],
+    "FunctionalEquipment": [],
+    "FunctionalSpecification": [],
+    "GAP_ELECTRICAL_CONDUCTANCE": [],
+    "GDTType": [],
+    "GeneralPanel": [
+      {
+        "object_type": "GeneralPanel",
+        "function_name": "SetColor",
+        "signature": "Other->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+      }
+    ],
+    "GeometricalBundle": [],
+    "GeometricFeature": [
+      {
+        "object_type": "GeometricFeature",
+        "function_name": "GetNearSubElements",
+        "signature": "GetNearSubElements (dimension: Integer, geoFeature: Geometric feature): List"
+      },
+      {
+        "object_type": "GeometricFeature",
+        "function_name": "GetSubElements",
+        "signature": "GetSubElements (dimension: Integer, duplicates: Boolean): List"
+      }
+    ],
+    "Groove": [],
+    "GrooveMilling": [],
+    "GroundSignal": [],
+    "GroupSet": [],
+    "GroupSignal": [],
+    "GSM3DCurveOffset": [],
+    "GSM3DWSupport": [],
+    "GSMAffinity": [],
+    "GSMAssemble": [],
+    "GSMAxisToAxis": [],
+    "GSMBlend": [],
+    "GSMBoundary": [],
+    "GSMCircle": [],
+    "GSMCircle2PointsRad": [],
+    "GSMCircle3Points": [],
+    "GSMCircleBitangentPt": [],
+    "GSMCircleBitangentRad": [],
+    "GSMCircleCenterAxis": [],
+    "GSMCircleCenterTangent": [],
+    "GSMCircleCtrPt": [],
+    "GSMCircleCtrRad": [],
+    "GSMCircleTritangent": [],
+    "GSMCombine": [],
+    "GSMConic": [],
+    "GSMConnect": [],
+    "GSMContour": [],
+    "GSMCorner": [],
+    "GSMCurve": [],
+    "GSMCurvePar": [],
+    "GSMCurveSmooth": [],
+    "GSMCylinder": [],
+    "GSMDevelop": [],
+    "GSMDirection": [],
+    "GSMDraft": [],
+    "GSMExtract": [],
+    "GSMExtractContour": [],
+    "GSMExtrapol": [],
+    "GSMExtremum": [],
+    "GSMExtremumPolar": [],
+    "GSMExtrude": [],
+    "GSMFill": [],
+    "GSMFillet": [],
+    "GSMFilletBiTangent": [],
+    "GSMGridFace": [],
+    "GSMGridSet": [],
+    "GSMGridSubset": [],
+    "GSMHealing": [],
+    "GSMHelix": [],
+    "GSMIntersect": [],
+    "GSMInverse": [],
+    "GSMLawDistProj": [],
+    "GSMLine": [],
+    "GSMLineAngle": [],
+    "GSMLineBisecting": [],
+    "GSMLineBiTangent": [],
+    "GSMLineCorner": [],
+    "GSMLineNormal": [],
+    "GSMLinePtDir": [],
+    "GSMLinePtPt": [],
+    "GSMLineTangency": [],
+    "GSMLoft": [],
+    "GSMLoftShape": [],
+    "GSMLoftSolid": [],
+    "GSMMask": [],
+    "GSMMidSurface": [],
+    "GSMMultiExtract": [],
+    "GSMMultiSel": [],
+    "GSMNear": [],
+    "GSMOffset": [],
+    "GSMPlane": [],
+    "GSMPlane1Curve": [],
+    "GSMPlane1Line1Pt": [],
+    "GSMPlane2Lines": [],
+    "GSMPlane3Points": [],
+    "GSMPlaneAngle": [],
+    "GSMPlaneBetween": [],
+    "GSMPlaneEquation": [],
+    "GSMPlaneNormal": [],
+    "GSMPlaneOffset": [],
+    "GSMPlaneOffsetPt": [],
+    "GSMPlaneTangent": [],
+    "GSMPoint": [],
+    "GSMPointBetween": [],
+    "GSMPointCenter": [],
+    "GSMPointCoord": [],
+    "GSMPointOnCurve": [],
+    "GSMPointOnPlane": [],
+    "GSMPointOnSurface": []
+  },
+  "failed_types": []
+}
