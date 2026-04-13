@@ -125,3 +125,206 @@ Feature,Update,Feature->Update (): VoidType
 GeneralPanel,SetColor,"Other->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
 GeometricFeature,GetNearSubElements,"GetNearSubElements (dimension: Integer, geoFeature: Geometric feature): List"
 GeometricFeature,GetSubElements,"GetSubElements (dimension: Integer, duplicates: Boolean): List"
+HgrSupportPart,AttachConnectivityCheck,AttachConnectivityCheck (): Boolean
+HgrSupportPart,SupportConnectivityCheck,Part->SupportConnectivityCheck (): Boolean
+HVACPartFunc,IsEquivDiameterConsistent,Function->IsEquivDiameterConsistent (): Boolean
+HVACPartFunc,IsInDuctSpec,Function->IsInDuctSpec (): Boolean
+Integer,inertiaAxis,"inertiaAxis (rank: Integer, Body, ...): Line"
+Integer,SRand,SRand (seed: Integer): VoidType
+Integer,Trace,"Trace (level: Integer, message: String, argument: Literal, ...): Voidlype"
+KWECheck,AddTupleFailed,"AddTupleFailed (Feature: Feature, ...): Boolean"
+KWECheck,AddTupleSucceeded,"AddTupleSucceeded (Feature: Feature, ...): Boolean"
+LENGTH,direction,"direction (x: Length, y: Length, z Length): Direction"
+LENGTH,point,"point (x: Length, y: Length, z: Length): Point"
+Line,angle,"angle (Line, Line): Angle"
+Line,angleoriented,"angleoriented (Line, Line, Direction): Angle"
+Line,circleCtrAxis,"circleCtrAxis (axis: Line, point: Point, radius: Length, start: Angle, end: Angle, projectionmode: Boolean, limits: Integer): Circle"
+Line,direction,direction (Line): Direction
+Line,plane,"plane (Line, Line): Plane"
+List,Append,List->Append (Object: ObjectType): VoidType
+List,Apply,"List->Apply (Type: String, Expression: String): VoidType"
+List,Compute,"List->Compute (Operation: String, Type: String, Expression: String, Result: out UndefinedType): Voidlype"
+List,Copy,Copy (List: List): List
+List,Extract,"List-> Extract (Type: String, TypeOutput: String, Expression: String): List"
+List,fill,"fill (curves: List, supports: List, continuity: Integer): Surface"
+List,Filter,"List->Filter (Type: String, Condition: String): List"
+List,IndexOf,"IndexOf (Element: ObjectType, StartIndex: Integer): Integer"
+List,loft,"loft (sections: List, orientations: List, guides: List): Surface"
+List,RemoveAll,List-> RemoveAll (): VoidType
+List,RemoveDuplicates,List->RemoveDuplicates (): VoidType
+List,Size,List->Size (): Integer
+List,Sort,"List->Sort (Operator: String, Type: String, TypeOutput: String, Expression: String): List"
+List,Sum,List->Sum (): Real
+ManufacturingActivity,GetCurrentAngle,Activity->GetCurrentAngle(): Real
+ManufacturingActivity,GetCurrentDistance,GetCurrentDistance (): Real
+ManufacturingActivity,GetCurrentLatitudeAngle,Activity->GetCurrentLatitudeAngle(): Real
+ManufacturingActivity,GetCurrentLongitudeAngle,Activity->GetCurrentLongitudeAngle(): Real
+ManufacturingActivity,GetCurrentZTopValue,Activity->GetCurrentZTopValue (): Real
+ManufacturingActivity,GetDistance,GetDistance (A Machining Operation: Manufacturing Activity): Real
+ManufacturingActivity,GetLatitudeAngle,Activity->GetLatitudeAngle (): Real
+ManufacturingActivity,GetLongitudeAngle,Activity->GetLongitudeAngle():Real
+ManufacturingActivity,GetProgram,Activity->GetProgram (): Manufacturing
+ManufacturingActivity,GetTool,GetTool (): Tool
+ManufacturingActivity,GetToolDiameter,Activity->GetToolDiameter (): Real
+ManufacturingActivity,GetToolLengthCut,GetToolLengthCut (): Real
+ManufacturingActivity,GetToolNumber,Activity->GetToolNumber (): Integer
+ManufacturingActivity,GetToolType,GetToolType (): String
+ManufacturingActivity,GetType,Activity->GetType(): String
+ManufacturingActivity,GetZTopValue,GetZTopValue (): Real
+ManufacturingActivity,HasPrecedenceWithCurrentMO,Activity->HasPrecedenceWithCurrentMO (): Boolean
+ManufacturingActivity,IsBefore,IsBefore (A Machining Cperation: Manufacturing Activity): Boolean
+ManufacturingActivity,IsSequenced,Activity->IsSequenced (): Boolean
+ManufacturingActivity,IsSequencedWith,IsSequencedWith (A Machining Operation: Manufacturing Activity): Boolean
+ManufacturingActivity,NotNextInSequence,Activity->NotNextinSequence (A Machining Operation: Manufacturing Activity): Boolean
+ManufacturingActivity,SequencedBefore,SequencedBefore (A Machining Operation: Manufacturing Activity): Boolean
+ManufacturingProgram,EndSequencing,EndSequencing (A Program: Manufacturing Program): Boolean
+ManufacturingProgram,InitSequencing,InitSequencing (A Program: Manufacturing Program): Boolean
+MldZone,AreZoneBoundariesValid,AreZoneBoundariesValid (): Boolean
+Pillar,SetColor,"Pillar->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+PipingBendablePipe,IsBendRadiusConsistent,bends->IsBendRadiusConsistent (): Boolean
+PipingBendablePipe,IsMinimumGripLengthConsistent,bends->IsMinimumGripLengthConsistent (): Boolean
+Plane,angle,"angle (Plane, Plane): Angle"
+Plane,angleoriented,"angleoriented (Plane, Plane, Direction): Angle"
+Plane,direction,direction (Plane): Direction
+Plane,planeangle,"planeangle (pln: Plane, axis: Line, angle: Angle, orientation: Boolean): Plane"
+Plane,planeoffset,"planeoffset (Plane, Point): Plane"
+Plane,pointonplane,"pointonplane (pin: Plane, pt: Point, dx: Length, dy: Length): Point"
+PltShpCompFunction,GetXViewCoord,Product->GetXViewCoord (ViewName: String): Real
+PltShpCompFunction,GetYViewCoord,Product->GetYViewCoord (ViewName: String): Real
+PltShpCompFunction,IsPartNumberDefined,Praduct->IsPartNumberDefined (): Boolean
+PltShpCompFunction,IsPartNumberValid,Praduct->IsPartNumberValid (): Boolean
+PltShpCompFunction,IsPartTypeValid,Product->IsPartTypeValid (): Boolean
+PltShpCompFunction,SwapGraphics,Product->SwapGraphics (GRRName: String): Boolean
+PltShpFunction,AllCoincidentElementsConnected,Product->AllCoincidentElementsConnected (): Boolean
+PltShpFunction,HasNoFlowDirectionConflicts,HasNoFlowDirectionConflicts (): Boolean
+PltShpFunction,IsElementConnected,Product->IsElementConnected (): Boolean
+PltShpFunction,IsNameConsistent,Product->IsNameConsistent (): Boolean
+PltShpFunction,IsZoneMembershipConsistentWith3D,IsZoneMembershipConsistentWith3D (): Boolean
+PltShpFunction,SetGraphicProperties,"SetGraphicProperties (Red: Integer, Green: Integer, Blue: Integer, LineType: Integer, Thickness: Integer): Boolean"
+PltShpGroup,IsNameConsistent,Products->IsNameConsistent (): Boolean
+PltShpPhysical,IsElementConnected,IsElementConnected (): Boolean
+PltShpPhysical,IsNameConsistent,IsNameConsistent (): Boolean
+PltShpStringFunction,GetRouteViewLength,GetRouteViewLength (ViewName: String): Real
+Point,angle,"angle (center: Point, pt]: Point, pt2: Point): Angle"
+Point,axisSystem,"axisSystem (Origin: Point, Direction1: Direction, Direction2: Direction, Direction3: Direction): Axis"
+Point,circle2PtsRadius,"circle2PtsRadius (point1: Point, point2: Point, support: Surface, radius: Length, orientation: Boolean, limits: Integer): Circle"
+Point,circle3Pts,"circle3Pts (point1: Point, point2: Point, point3: Point, limits: Integer): Circle"
+Point,circleCtrPt,"circleCtrPt (center Point, point: Point, support: Surface, limits: Integer, start: Angle, end: Angle): Circle"
+Point,circleCtrRadius,"circleCtrRadius (center Point, support: Surface, radius: Length, limits: Integer, start: Angle, end: Angle): Circle"
+Point,circleCtrtgt,"circleCtrtgt (point: Point, curve: Curve, curve orientation: Boolean, tangent orientation: Boolean, support: Surface): Circle"
+Point,coord,"Point->coord (x: out Length, y: out Length, z out Length, optionalAxisSystem: Axis System): VoidType"
+Point,extrude,"extrude (Point, Direction, length1: Length, length2: Length, orientation: Boolean): Line"
+Point,far,"far (pt: Point, far: Wireframe): Point"
+Point,line,"line (pt: Point, dir: Direction, start: Length, end: Length, orientation: Boolean): Line"
+Point,near,"Near (pt: Point, near: Wireframe): Point"
+Point,plane,"plane (Point, Line): Plane"
+Point,planemean,"planemean (Point, ...): Plane"
+Point,pointbetween,"pointbetween (pt1: Point, pt2: Point, ratio: Real, orientation: Boolean): Point"
+Point,project,"project (toproject: Point, CurveOrSurfaceSupport: Wireframe, OptionalDir: Direction): Point"
+Point,revolve,"revolve (Point, axis: Line, angle1: Angle, angle2: Angle): Circle"
+Point,spline,"spline (Point, ...): Curve"
+Pointer,ValuatePointer,"ValuatePointer (StartObject: ObjectType, iBind: String, type: String): VoidType"
+Product,CreateConstraint,"Product->CreateConstraint (name: String, type: String, element: ObjectType, ...): UndefinedType"
+Product,CreatePathString,"Praduct->CreatePathString (instance: Feature, element: ObjectType): String"
+Product,CreatePublication,"Product->CreatePublication (instance: Product, published element: ObjectType, name: String): String"
+Product,DistanceMin,"DistanceMin (p1: Product, p2: Product, ...): Length"
+Product,GetLocation,"Product->GetLocation (out Real, out Real, out Real): Boolean"
+Product,HasARepresentation,Praduct->HasARepresentation (String): Boolean
+Product,IsIncludedIn,"IsIncludedIn (p1: Product, p2: Product): Boolean"
+Product,ManageInstance,Praduct->ManageInstance (catalogld (ARM): String
+Product,PenetrationMax,"PenetrationMax (p1: Product, p2: Product, ...): Length"
+Product,RemoveInstance,RemoveInstance (instanceName: String): Product
+Real,abs,abs (Real): Real
+Real,acos,acos (Real): Angle
+Real,acosh,acosh (Real): Real
+Real,asin,asin (Real): Angle
+Real,asinh,asinh (Real): Real
+Real,atan,atan (Real): Angle
+Real,atanh,atanh (Real): Real
+Real,ceil,ceil (Real): Real
+Real,cos,cos (Real): Real
+Real,cosh,cosh (Real): Real
+Real,exp,exp (Real): Real
+Real,floor,floor (Real): Real
+Real,int,int (v: Real): Integer
+Real,LinearInterpolation,"LinearInterpolation (arg1: Real, arg2: Real, arg3: Real): Real"
+Real,log,log (Real): Real
+Real,max,"max (arg1: Real, arg2: Real, ...): Real"
+Real,min,"min (arg1: Real, arg2: Real, ...): Real"
+Real,mod,"mod (Real, Integer): Real"
+Real,plane,"plane (a: Real, b: Real, c: Real, d: Length): Plane"
+Real,round,"round (Real, String, Integer): Real"
+Real,sin,sin (Real): Real
+Real,sinh,sinh (Real): Real
+Real,sqrt,sqrt (Real): Real
+Real,tan,tan (Real): Real
+Real,tanh,tanh (Real): Real
+Real,ToString,ToString (Real): String
+SddDesignUnit,SetColor,"Unit->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+SfdBeam,SetColor,"Object->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+SfdSystem,SetColor,"System->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+ShellPanel,SetColor,"Shell->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+SHMDistance,SHMFoldedDistance,"SHMFoldedDistance (iA: SHMDistance, iB: SHMDistance): Length"
+SHMDistance,SHMUnfoldedDistance,"SHMUnfoldedDistance (iA: SHMDistance, iB: SHMDistance): Length"
+Solid,extremum,"extremum (Solid, Direction, Boolean, Direction, Boolean, Direction, Boolean): Point"
+Solid,ProjectedArea,"ProjectedArea (iSolid: Solid, iAxisSystemZ: Axis System): Area"
+Solid,smartVolume,"smartVolume (elem: Solid, ...): Volume"
+Solid,smartWetarea,"smartWetarea (elem: Solid, ...): Area"
+StrFoundationExt,SetColor,"Foundation->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+String,BuildMessageNLS,"BuildMessageNLS (MessageCatalog: String, MessageKey: String, argument: Literal, ...): String"
+String,ChangeToolOnRelatedActivities,"ChangeToolOnRelatedActivities (A tool change name: String, A cutting tool: Tool): Integer"
+String,CheckLicense,"CheckLicense (License: String, LaunchError. Boolean): Integer"
+String,ClashOrContact,"ClashOrContact (p1: String, Product, Product, ...): Boolean"
+String,CreateOrModifyDatum,"CreateOrModifyDatum (datumType: String, destination: Feature, patternList: List, indexInPatternList: Integer): UndefinedType"
+String,CreateOrModifyTemplate,CreateOrModifyTemplate (templateld (ARM): String
+String,DistanceMin,"DistanceMin (p2: String, p1: Product, p2: Product,...): Length"
+String,Extract,"Extract (Integer, Integer): String"
+String,GenerateScript,"GenerateScript (script: String, ...): VoidType"
+String,GetEnvVariableValue,GetEnvVariableValue (VarName: String): String
+String,GetPriority,GetPriority (A name: String): Integer
+String,InstantiateTemplate,InstantiateTemplate (templateld (ARM): String
+String,LaunchMacroFromDoc,LaunchMacroFromDoc (name: String): VoidType
+String,LaunchMacroFromFile,LaunchMacroFromFile (file: String): VoidType
+String,Length,Length (): Integer
+String,Message,"Message (message: String, argument: Literal, ...): VoidType"
+String,Question,"Question (question: String, argument: Literal, ...): Boolean"
+String,ReplaceSubText,"ReplaceSubText (v1: String, v2: String, v2: String): String"
+String,Search,"String->Search (String, index: Integer, Forward: Boolean): Integer"
+String,SetPriority,"SetPriority (A name: String, A priority positive value: Integer): Integer"
+String,SplitString,"SplitString (0: String, s: String): List"
+String,ToDimension,String->ToDimension (String): Magnitude
+String,ToLower,ToLower (v1: String): String
+String,ToReal,ToReal (): Real
+String,ToUpper,ToUpper (v1: String): String
+STRPlate,SetColor,"STRPlate->SetColor (Red: Integer, Green: Integer, Blue: Integer): Boolean"
+Surface,area,"area (Surface, ...): Area"
+Surface,assemble,"assemble (Surface, ...): Surface"
+Surface,axis,axis (revolutionSurface: Surface): Line
+Surface,boundary,boundary (element: Surface): Curve
+Surface,extremum,"extremum (Surface, Direction, Boolean, Direction, Boolean, Direction, Boolean): Point"
+Surface,extrude,"extrude (Surface, Direction, length1: Length, length2: Length, orientation: Boolean): Surface"
+Surface,far,"far (sur: Surface, far: Wireframe): Surface"
+Surface,intersect,"intersect (Surface, Surface): Curve"
+Surface,isoparamcurve,"isoparamcurve (SupportSurface: Surface, PassingPoint: Point, Direction: Line): Curve"
+Surface,linenormal,"linenormal (sur: Surface, pt: Point, start: Length, end: Length, orientation: Boolean): Line"
+Surface,near,"near (sur: Surface, near: Wireframe): Surface"
+Surface,offset,"offset (sur Surface, offset: Length, orientation: Boolean): Surface"
+Surface,perimeter,"perimeter (Surface, ...): Length"
+Surface,planetangent,"planetangent (Surface, Point): Plane"
+Surface,pointonsurface,"pointonsurface (sur Surface, pt: Point, din Direction, dist: Length): Point"
+Surface,ProjectedArea,"ProjectedArea (iSurface: Surface, iAxisSystemZ: Axis System): Area"
+Surface,revolve,"revolve (Surface, axis: Line, angle: Angle, angle2: Angle): Surface"
+Surface,split,"split (tosplit: Surface, splitting: Curve, orientation: Boolean): Surface"
+Surface,trim,"trim (sur: Surface, orientationSur1: Boolean, sur2: Surface, orientationSur2: Boolean): Surface"
+Surface,volume,"volume (closed_surface: Surface, ...): Volume"
+TubingBendableTube,IsBendRadiusConsistent,IsBendRadiusConsistent (): Boolean
+TubingTube,IsTotalLengthConsistent,IsTotallengthConsistent (): Boolean
+ValuePointer,SetValue,ValuePointer->SetValue (Value: Literal): VoidType
+VBScript,Run,"Script->Run (valueOrFeature: ObjectType, ...): Voidlype"
+VolumeGeo,volume,"volume (Volume geometry, ...): Volume"
+Wireframe,affinity,"affinity (totransform: Wireframe, axisorigin: Point, axisplane: Plane, axis|stdirection: Line, ratioX: Real, ratioY: Real, ratioZ: Real): Wireframe"
+Wireframe,invert,invert (CurveOrSurfaceTolnvert: Wireframe): Wireframe
+Wireframe,rotate,"rotate (totransform: Wireframe, axis: Line, angle: Angle): Wireframe"
+Wireframe,scaling,"scaling (totransform: Wireframe, reference: Wireframe, ratio: Real): Wireframe"
+Wireframe,symmetry,"symmetry (totransform: Wireframe, invariant: Wireframe): Wireframe"
+Wireframe,translate,"translate (totransform: Wireframe, dir Direction, distance: Length): Wireframe"
